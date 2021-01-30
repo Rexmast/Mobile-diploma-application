@@ -1,0 +1,235 @@
+fileFormatVersion: 2
+guid: 68bdc5b7af91c044c98272f5fc0bb50f
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: Pereliv_0
+    21300002: Pereliv_1
+    21300004: Pereliv_2
+    21300006: Pereliv_3
+    21300008: Pereliv_4
+    21300010: Pereliv_5
+    21300012: Pereliv_6
+  externalObjects: {}
+  serializedVersion: 9
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - serializedVersion: 2
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Pereliv_0
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 1747
+        width: 2605
+        height: 1517
+      alignment: 9
+      pivot: {x: 0.49866116, y: 0.7230206}
+      border: {x: 0, y: 0, z: 14, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7d8a4971c515c524d99fb7f92d026f44
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pereliv_1
+      rect:
+        serializedVersion: 2
+        x: 114
+        y: 87
+        width: 2602
+        height: 1468
+      alignment: 9
+      pivot: {x: 0.50000006, y: 0.7352166}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cffa25d03ad299b4fa4515f4bf8c8149
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pereliv_2
+      rect:
+        serializedVersion: 2
+        x: 2764
+        y: 1733
+        width: 2605
+        height: 1479
+      alignment: 9
+      pivot: {x: 0.4986613, y: 0.73818386}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b62a064a165f3ec41b94f2196250df9f
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pereliv_3
+      rect:
+        serializedVersion: 2
+        x: 2782
+        y: 66
+        width: 2588
+        height: 1475
+      alignment: 9
+      pivot: {x: 0.5026956, y: 0.743559}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4588bff806f24064682e1819eb30f19c
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pereliv_4
+      rect:
+        serializedVersion: 2
+        x: 2730
+        y: 1723
+        width: 2612
+        height: 1485
+      alignment: 9
+      pivot: {x: 0.50667685, y: 0.7442675}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 868f1238648dc514581cfd1f2d8a92f6
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pereliv_5
+      rect:
+        serializedVersion: 2
+        x: 107
+        y: 90
+        width: 2609
+        height: 1483
+      alignment: 9
+      pivot: {x: 0.49866322, y: 0.73048556}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0f1cee93596e9f448bad569775288b49
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pereliv_6
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 1744
+        width: 2598
+        height: 1520
+      alignment: 9
+      pivot: {x: 0.5000001, y: 0.7271698}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 255ac3dbeae646b4cb3288c530f6ad5c
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: b3832322822caf44b9bb8742e8c99404
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
