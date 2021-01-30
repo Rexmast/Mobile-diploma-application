@@ -1261,9 +1261,9 @@ MonoBehaviour:
     type: 3}
   AnimationTrue: {fileID: 5462322717624543390, guid: d29f5e3a5c910194b969e98aa8071361,
     type: 3}
-  ElementMenuOFF: {fileID: 0}
-  ElementMenuON: {fileID: 0}
-  TimePerecluch: 0
+  ElementMenuOFF: {fileID: 1200145893}
+  ElementMenuON: {fileID: 586296044}
+  TimePerecluch: 5
 --- !u!224 &798091768 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 774848635320044662, guid: 7fb1ab074a187204bb573018ae1ef090,
@@ -2317,12 +2317,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ffca44c8103a1834690e8254fc8f7995, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  index: 0
+  index: 1
   AnimationFalse: {fileID: 3055066274109937242, guid: d991a3d1cd4afc547b4d88361641564f,
     type: 3}
   AnimationTrue: {fileID: 0}
-  ElementMenuOFF: {fileID: 0}
-  ElementMenuON: {fileID: 0}
+  ElementMenuOFF: {fileID: 1200145893}
+  ElementMenuON: {fileID: 586296044}
   TimePerecluch: 0
 --- !u!224 &1723607628 stripped
 RectTransform:
@@ -2920,6 +2920,31 @@ PrefabInstance:
         type: 3}
       propertyPath: m_textInfo.spaceCount
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 774848634327679929, guid: 7fb1ab074a187204bb573018ae1ef090,
+        type: 3}
+      propertyPath: m_enableVertexGradient
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 774848634327679929, guid: 7fb1ab074a187204bb573018ae1ef090,
+        type: 3}
+      propertyPath: m_fontColor.r
+      value: 0.7607844
+      objectReference: {fileID: 0}
+    - target: {fileID: 774848634327679929, guid: 7fb1ab074a187204bb573018ae1ef090,
+        type: 3}
+      propertyPath: m_fontColor.g
+      value: 0.7607844
+      objectReference: {fileID: 0}
+    - target: {fileID: 774848634327679929, guid: 7fb1ab074a187204bb573018ae1ef090,
+        type: 3}
+      propertyPath: m_fontColor.b
+      value: 0.7607844
+      objectReference: {fileID: 0}
+    - target: {fileID: 774848634327679929, guid: 7fb1ab074a187204bb573018ae1ef090,
+        type: 3}
+      propertyPath: m_fontColor32.rgba
+      value: 4290953922
       objectReference: {fileID: 0}
     - target: {fileID: 774848634327679931, guid: 7fb1ab074a187204bb573018ae1ef090,
         type: 3}
