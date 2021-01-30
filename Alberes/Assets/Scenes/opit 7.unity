@@ -318,7 +318,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 330}
+  m_AnchoredPosition: {x: 0, y: 300}
   m_SizeDelta: {x: 1000, y: 36}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &168135978
@@ -448,7 +448,7 @@ PrefabInstance:
     - target: {fileID: 774848635320044662, guid: 7fb1ab074a187204bb573018ae1ef090,
         type: 3}
       propertyPath: m_RootOrder
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 774848635320044662, guid: 7fb1ab074a187204bb573018ae1ef090,
         type: 3}
@@ -473,7 +473,7 @@ PrefabInstance:
     - target: {fileID: 774848635320044662, guid: 7fb1ab074a187204bb573018ae1ef090,
         type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -545.4951
+      value: -545.9951
       objectReference: {fileID: 0}
     - target: {fileID: 774848635320044662, guid: 7fb1ab074a187204bb573018ae1ef090,
         type: 3}
@@ -539,8 +539,9 @@ MonoBehaviour:
   AnimationFalse: {fileID: 3055066274109937242, guid: d991a3d1cd4afc547b4d88361641564f,
     type: 3}
   AnimationTrue: {fileID: 0}
-  Element1: {fileID: 1200145893}
-  Element2: {fileID: 586296044}
+  ElementMenuOFF: {fileID: 0}
+  ElementMenuON: {fileID: 0}
+  TimePerecluch: 0
 --- !u!224 &189042613 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 774848635320044662, guid: 7fb1ab074a187204bb573018ae1ef090,
@@ -581,7 +582,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 370}
+  m_AnchoredPosition: {x: 0, y: 330}
   m_SizeDelta: {x: 1000, y: 36}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &260432428
@@ -722,8 +723,9 @@ MonoBehaviour:
   AnimationFalse: {fileID: 3055066274109937242, guid: d991a3d1cd4afc547b4d88361641564f,
     type: 3}
   AnimationTrue: {fileID: 0}
-  Element1: {fileID: 1200145893}
-  Element2: {fileID: 586296044}
+  ElementMenuOFF: {fileID: 0}
+  ElementMenuON: {fileID: 0}
+  TimePerecluch: 0
 --- !u!1 &519420028
 GameObject:
   m_ObjectHideFlags: 0
@@ -952,7 +954,7 @@ PrefabInstance:
     - target: {fileID: 774848635320044662, guid: 7fb1ab074a187204bb573018ae1ef090,
         type: 3}
       propertyPath: m_RootOrder
-      value: 2
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 774848635320044662, guid: 7fb1ab074a187204bb573018ae1ef090,
         type: 3}
@@ -977,7 +979,7 @@ PrefabInstance:
     - target: {fileID: 774848635320044662, guid: 7fb1ab074a187204bb573018ae1ef090,
         type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -545.4951
+      value: -545.9951
       objectReference: {fileID: 0}
     - target: {fileID: 774848635320044662, guid: 7fb1ab074a187204bb573018ae1ef090,
         type: 3}
@@ -1085,8 +1087,9 @@ MonoBehaviour:
   AnimationFalse: {fileID: 3055066274109937242, guid: d991a3d1cd4afc547b4d88361641564f,
     type: 3}
   AnimationTrue: {fileID: 0}
-  Element1: {fileID: 1200145893}
-  Element2: {fileID: 586296044}
+  ElementMenuOFF: {fileID: 0}
+  ElementMenuON: {fileID: 0}
+  TimePerecluch: 0
 --- !u!1 &618250103
 GameObject:
   m_ObjectHideFlags: 0
@@ -1232,8 +1235,9 @@ MonoBehaviour:
   AnimationFalse: {fileID: 3055066274109937242, guid: d991a3d1cd4afc547b4d88361641564f,
     type: 3}
   AnimationTrue: {fileID: 0}
-  Element1: {fileID: 1200145893}
-  Element2: {fileID: 586296044}
+  ElementMenuOFF: {fileID: 0}
+  ElementMenuON: {fileID: 0}
+  TimePerecluch: 0
 --- !u!1 &798091763 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 774848635320044655, guid: 7fb1ab074a187204bb573018ae1ef090,
@@ -1257,8 +1261,9 @@ MonoBehaviour:
     type: 3}
   AnimationTrue: {fileID: 5462322717624543390, guid: d29f5e3a5c910194b969e98aa8071361,
     type: 3}
-  Element1: {fileID: 1200145893}
-  Element2: {fileID: 586296044}
+  ElementMenuOFF: {fileID: 0}
+  ElementMenuON: {fileID: 0}
+  TimePerecluch: 0
 --- !u!224 &798091768 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 774848635320044662, guid: 7fb1ab074a187204bb573018ae1ef090,
@@ -1398,8 +1403,9 @@ MonoBehaviour:
   AnimationFalse: {fileID: 3055066274109937242, guid: d991a3d1cd4afc547b4d88361641564f,
     type: 3}
   AnimationTrue: {fileID: 0}
-  Element1: {fileID: 1200145893}
-  Element2: {fileID: 586296044}
+  ElementMenuOFF: {fileID: 0}
+  ElementMenuON: {fileID: 0}
+  TimePerecluch: 0
 --- !u!1 &1178493226
 GameObject:
   m_ObjectHideFlags: 0
@@ -1496,12 +1502,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1200145893}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 426.45526, y: 548.1951, z: -4.069437}
+  m_LocalPosition: {x: 426.45526, y: 548.2951, z: -4.069437}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 189042613}
-  - {fileID: 798091768}
   - {fileID: 1442664037}
+  - {fileID: 798091768}
   - {fileID: 1723607628}
   m_Father: {fileID: 0}
   m_RootOrder: 4
@@ -1534,8 +1540,9 @@ MonoBehaviour:
   AnimationFalse: {fileID: 3055066274109937242, guid: d991a3d1cd4afc547b4d88361641564f,
     type: 3}
   AnimationTrue: {fileID: 0}
-  Element1: {fileID: 1200145893}
-  Element2: {fileID: 586296044}
+  ElementMenuOFF: {fileID: 0}
+  ElementMenuON: {fileID: 0}
+  TimePerecluch: 0
 --- !u!1 &1252821052
 GameObject:
   m_ObjectHideFlags: 0
@@ -1965,8 +1972,9 @@ MonoBehaviour:
   AnimationFalse: {fileID: 3055066274109937242, guid: d991a3d1cd4afc547b4d88361641564f,
     type: 3}
   AnimationTrue: {fileID: 0}
-  Element1: {fileID: 1200145893}
-  Element2: {fileID: 586296044}
+  ElementMenuOFF: {fileID: 0}
+  ElementMenuON: {fileID: 0}
+  TimePerecluch: 0
 --- !u!224 &1442664037 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 774848635320044662, guid: 7fb1ab074a187204bb573018ae1ef090,
@@ -2313,8 +2321,9 @@ MonoBehaviour:
   AnimationFalse: {fileID: 3055066274109937242, guid: d991a3d1cd4afc547b4d88361641564f,
     type: 3}
   AnimationTrue: {fileID: 0}
-  Element1: {fileID: 1200145893}
-  Element2: {fileID: 586296044}
+  ElementMenuOFF: {fileID: 0}
+  ElementMenuON: {fileID: 0}
+  TimePerecluch: 0
 --- !u!224 &1723607628 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 774848635320044662, guid: 7fb1ab074a187204bb573018ae1ef090,
@@ -2527,7 +2536,7 @@ PrefabInstance:
     - target: {fileID: 774848635320044662, guid: 7fb1ab074a187204bb573018ae1ef090,
         type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -545.4951
+      value: -545.9951
       objectReference: {fileID: 0}
     - target: {fileID: 774848635320044662, guid: 7fb1ab074a187204bb573018ae1ef090,
         type: 3}
@@ -3072,5 +3081,6 @@ MonoBehaviour:
   AnimationFalse: {fileID: 3055066274109937242, guid: d991a3d1cd4afc547b4d88361641564f,
     type: 3}
   AnimationTrue: {fileID: 0}
-  Element1: {fileID: 1200145893}
-  Element2: {fileID: 586296044}
+  ElementMenuOFF: {fileID: 0}
+  ElementMenuON: {fileID: 0}
+  TimePerecluch: 0
