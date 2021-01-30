@@ -2333,7 +2333,7 @@ PrefabInstance:
     - target: {fileID: 3806256997733419593, guid: 44ff6607ccc18d844ac8dd233b399e5b,
         type: 3}
       propertyPath: m_Text
-      value: "FeSO4 + 2KOH \u2192 Fe(OH)2 + K2SO4"
+      value: "\u0411) FeSO4 + 2KOH \u2192 Fe(OH)2 + K2SO4"
       objectReference: {fileID: 0}
     - target: {fileID: 3806256997745794903, guid: 44ff6607ccc18d844ac8dd233b399e5b,
         type: 3}
@@ -2358,7 +2358,7 @@ PrefabInstance:
     - target: {fileID: 3806256998075964631, guid: 44ff6607ccc18d844ac8dd233b399e5b,
         type: 3}
       propertyPath: m_Text
-      value: "Na2SO4 + 2KOH \u2192 Fe(OH)2 + K2SO4"
+      value: "A) Na2SO4 + 2KOH \u2192 Fe(OH)2 + K2SO4"
       objectReference: {fileID: 0}
     - target: {fileID: 3806256998119302726, guid: 44ff6607ccc18d844ac8dd233b399e5b,
         type: 3}
@@ -2373,12 +2373,12 @@ PrefabInstance:
     - target: {fileID: 3806256998165230424, guid: 44ff6607ccc18d844ac8dd233b399e5b,
         type: 3}
       propertyPath: m_Text
-      value: "2Fe(OH)2 +H2O2 \u2192 2Fe(OH)3"
+      value: "\u0414) 2Fe(OH)2 +H2O2 \u2192 2Fe(OH)3"
       objectReference: {fileID: 0}
     - target: {fileID: 3806256998276548755, guid: 44ff6607ccc18d844ac8dd233b399e5b,
         type: 3}
       propertyPath: m_Text
-      value: "FeCl3 + 3KOH \u2192 Fe(OH)3 + 3KCl"
+      value: "\u0412) FeCl3 + 3KOH \u2192 Fe(OH)3 + 3KCl"
       objectReference: {fileID: 0}
     - target: {fileID: 3806256998322710346, guid: 44ff6607ccc18d844ac8dd233b399e5b,
         type: 3}
@@ -2393,7 +2393,7 @@ PrefabInstance:
     - target: {fileID: 3806256998520166515, guid: 44ff6607ccc18d844ac8dd233b399e5b,
         type: 3}
       propertyPath: m_Text
-      value: "4Fe(OH)2 +O2 + 2H2O \u2192 4Fe(OH)3"
+      value: "\u0413) 4Fe(OH)2 +O2 + 2H2O \u2192 4Fe(OH)3"
       objectReference: {fileID: 0}
     - target: {fileID: 3806256998723566601, guid: 44ff6607ccc18d844ac8dd233b399e5b,
         type: 3}
