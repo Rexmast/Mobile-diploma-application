@@ -19,6 +19,10 @@ public class Opit8Controler : Controler
         GameObject Rezult = (GameObject)Instantiate(AnimationTrue);
         Rezult.transform.position = transform.position;
         Invoke(nameof(MenuON), TimePerecluch);
-
+    }
+    public override void FalseRezultOpit()
+    {
+        Global.ErrorCounter++;
     }
 }
+

@@ -29,6 +29,10 @@ public class Controler : MonoBehaviour
         GameObject Rezult = (GameObject)Instantiate(AnimationTrue);
         Rezult.transform.position = transform.position;
     }
+    public virtual void FalseRezultOpit()
+    {
+        
+    }
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if (MouseDown)
@@ -39,6 +43,7 @@ public class Controler : MonoBehaviour
             }
             else
             {
+                FalseRezultOpit();
                 GameObject Boom = (GameObject)Instantiate(AnimationFalse);
                 Boom.transform.position = transform.position;
                 MouseDown = false;
