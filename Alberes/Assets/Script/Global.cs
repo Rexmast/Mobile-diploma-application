@@ -5,4 +5,5 @@ using UnityEngine;
 public class Global : MonoBehaviour
 {
     public static int k = 3;
+    public static double Bal = 0;
 }
