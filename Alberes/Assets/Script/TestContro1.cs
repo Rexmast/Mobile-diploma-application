@@ -7,14 +7,28 @@ public class TestContro1 : MonoBehaviour
 {
     public Toggle[] ArreaToggleTrue;
     public double BalPlus;
+    public Toggle[] ArreaToggleFalse;
+    public double BalMinus;
+    double BalTest;
     public void Proverka()
     {
         for (int i = 0; i < ArreaToggleTrue.Length; i++)
         {
             if (ArreaToggleTrue[i].isOn)
-                Global.Bal += BalPlus;
+                BalTest += BalPlus;
         }
-        Debug.Log(Global.Bal);
+        for (int i = 0; i < ArreaToggleFalse.Length; i++)
+        {
+            if (ArreaToggleFalse[i].isOn)
+                BalTest -= BalMinus;
+        }
+        if (BalTest > 0)
+        {
+            Global.Bal += BalTest;
+        }
+        Debug.Log(BalTest);
+        Debug.Log(Global.Bal); 
     }
+   
 
 }
