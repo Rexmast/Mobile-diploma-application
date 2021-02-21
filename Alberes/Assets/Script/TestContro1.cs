@@ -9,6 +9,8 @@ public class TestContro1 : MonoBehaviour
     public double BalPlus;
     public Toggle[] ArreaToggleFalse;
     public double BalMinus;
+    public GameObject[] OOFElement;
+    public GameObject[] ONElement;
     double BalTest;
     public void Proverka()
     {
@@ -29,6 +31,18 @@ public class TestContro1 : MonoBehaviour
         Debug.Log(BalTest);
         Debug.Log(Global.Bal); 
     }
+    public void NextTest()
+    {
+        for(int i = 0; i < OOFElement.Length; i++)
+        {
+            OOFElement[i].SetActive(false);
+        }
+        for (int i = 0; i < ONElement.Length; i++)
+        {
+            ONElement[i].SetActive(true);
+        }
+    }
+
    
 
 }

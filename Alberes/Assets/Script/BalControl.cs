@@ -8,14 +8,14 @@ public class BalControl : MonoBehaviour
     public double[] BalOneStep = new double[3];
     public double BalMinusOneError = -0.75;
     double LocalBal = 0;
-    int LokalTemp = 0;
+    
     void RashetBal()
     {
-        LocalBal = BalOneStep[LokalTemp]-(BalMinusOneError * Global.ErrorCounter);
+        LocalBal = BalOneStep[Global.StepNumber] +(BalMinusOneError * Global.ErrorCounter);
         if (LocalBal < 0) { LocalBal = 0; }
         Global.Bal += LocalBal;
-        Debug.Log("Ошибок в ходе выполнения" + Global.ErrorCounter);
-        Debug.Log("Набраный бал" + Global.Bal);
+        Debug.Log("Ошибок в ходе выполнения " + Global.ErrorCounter);
+        Debug.Log("Набраный бал " + Global.Bal);
 
     }
     public void Rezult()
@@ -25,14 +25,16 @@ public class BalControl : MonoBehaviour
     }
      void NextStep() 
      {
-        Step[LokalTemp].SetActive(false);
-        if(LokalTemp < Step.Length) {
-            LokalTemp++;
-            Step[LokalTemp].SetActive(true);
+        Step[Global.StepNumber].SetActive(false);
+        if(Global.StepNumber < Step.Length) {
+            Global.StepNumber++;
+            Step[Global.StepNumber].SetActive(true);
         }
+        else
+        {
+            //финал
+        }
+
         
      }
-
-
-
 }
