@@ -9,6 +9,7 @@ public class Opit7Controler : Controler
     public GameObject ElementMenuOFF;
     public GameObject ElementMenuON;
     public int TimePerecluch;
+    public bool MoreElement = false;
     
     public void MenuON()
     {
@@ -16,21 +17,25 @@ public class Opit7Controler : Controler
     }
     public override void TrueRezultOpit()
     {
-        Debug.Log("true");
-        if (gameObject.CompareTag("Delite"))
+        if (MoreElement)
         {
             Global.k--;
-            Debug.Log(Global.k);
+
+            GameObject Rezult = (GameObject)Instantiate(AnimationTrue);
+            Rezult.transform.position = transform.position;
+            if (Global.k == 0)
+            {
+                ElementMenuOFF.SetActive(false);
+                Invoke(nameof(MenuON), TimePerecluch);
+
+            }
         }
         else
         {
-            ElementMenuOFF.SetActive(false);
+            GameObject Rezult = (GameObject)Instantiate(AnimationTrue);
+            Rezult.transform.position = transform.position;
+            Invoke(nameof(MenuON), TimePerecluch);
         }
         
-        
-        GameObject Rezult = (GameObject)Instantiate(AnimationTrue);
-        Rezult.transform.position = transform.position;
-        Invoke(nameof(MenuON), TimePerecluch);
-
     }
 }
