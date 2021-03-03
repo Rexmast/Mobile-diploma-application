@@ -10,6 +10,8 @@ public class Opit7Controler : Controler
     public GameObject ElementMenuON;
     public int TimePerecluch;
     public bool MoreElement = false;
+    public GameObject ActivetObject;
+    
     
     public void MenuON()
     {
@@ -19,15 +21,15 @@ public class Opit7Controler : Controler
     {
         if (MoreElement)
         {
+            ActivetObject.SetActive(true);
             Global.k--;
-
             GameObject Rezult = (GameObject)Instantiate(AnimationTrue);
             Rezult.transform.position = transform.position;
+            this.gameObject.SetActive(false);
             if (Global.k == 0)
             {
                 ElementMenuOFF.SetActive(false);
                 Invoke(nameof(MenuON), TimePerecluch);
-
             }
         }
         else

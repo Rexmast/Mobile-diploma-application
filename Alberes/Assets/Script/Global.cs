@@ -8,4 +8,8 @@ public class Global : MonoBehaviour
     public static double Bal = 0;
     public static int ErrorCounter = 0;
     public static int StepNumber = 0;
+    public static bool ActivHelp = false;
+    public static bool ActivRezult = false;
+    public static uint TempHelpPanel = 0;
+    public static bool ActivZoom = false;
 }

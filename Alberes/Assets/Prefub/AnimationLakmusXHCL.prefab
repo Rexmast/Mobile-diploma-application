@@ -209,4 +209,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fbf1864f54bef0245bf52d59a89b9e28, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  LifeTimeAnimationSecond: 2
+  LifeTimeAnimationSecond: 4
