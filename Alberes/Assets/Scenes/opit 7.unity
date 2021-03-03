@@ -9175,7 +9175,6 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-<<<<<<< Updated upstream
 --- !u!1 &1622827500
 GameObject:
   m_ObjectHideFlags: 0
@@ -9275,8 +9274,6 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
-=======
->>>>>>> Stashed changes
 --- !u!1 &1660742883
 GameObject:
   m_ObjectHideFlags: 0
