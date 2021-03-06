@@ -2,10 +2,10 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class BalControl : MonoBehaviour
+public  class BalControl : MonoBehaviour
 {
-    public GameObject[] Step = new GameObject[3];
-    public double[] BalOneStep = new double[3];
+    public GameObject[] Step = new GameObject[1];
+    public double[] BalOneStep = new double[1];
     public double BalMinusOneError = -0.75;
     double LocalBal = 0;
     
@@ -18,10 +18,10 @@ public class BalControl : MonoBehaviour
         Debug.Log("Набраный бал " + Global.Bal);
 
     }
-    public void Rezult()
-    {
-        RashetBal();
-        NextStep();
+    public void  Rezult()
+    { 
+      RashetBal();
+      NextStep();
     }
      void NextStep() 
      {

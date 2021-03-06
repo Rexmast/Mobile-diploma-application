@@ -24,11 +24,10 @@ public class Opit7Controler : Controler
             ActivetObject.SetActive(true);
             Global.k--;
             GameObject Rezult = (GameObject)Instantiate(AnimationTrue);
-            Rezult.transform.position = transform.position;
+            Rezult.transform.position = transform.TransformVector(0, -8, 0);
             this.gameObject.SetActive(false);
             if (Global.k == 0)
             {
-                ElementMenuOFF.SetActive(false);
                 Invoke(nameof(MenuON), TimePerecluch);
             }
         }
@@ -39,5 +38,9 @@ public class Opit7Controler : Controler
             Invoke(nameof(MenuON), TimePerecluch);
         }
         
+    }
+    public override void FalseRezultOpit()
+    {
+        Global.ErrorCounter++;
     }
 }

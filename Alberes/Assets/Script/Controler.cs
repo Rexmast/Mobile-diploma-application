@@ -7,9 +7,9 @@ public class Controler : MonoBehaviour
     bool MouseDown = false;
     
     public int index;
-    Vector3 StartPosition;
+    protected Vector3 StartPosition;
     [SerializeField]
-    Object AnimationFalse;
+    protected Object AnimationFalse;
     [SerializeField]
     protected Object AnimationTrue;
     void Start()
@@ -39,7 +39,6 @@ public class Controler : MonoBehaviour
             if (collision.gameObject.CompareTag("truee") && index == 1)
             {
                 TrueRezultOpit();
- 
             }
             else
             {
