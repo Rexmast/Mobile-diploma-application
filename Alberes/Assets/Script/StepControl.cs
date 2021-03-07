@@ -9,7 +9,9 @@ public class StepControl : MonoBehaviour
     [SerializeField]
     GameObject[] PanelElement = new GameObject[1];
     [SerializeField]    
-    GameObject[] PanelZoomObject = new GameObject[1];
+    GameObject[] PanelZoomObjectIN = new GameObject[1];
+    [SerializeField]
+    GameObject[] PanelZoomObjectOUT = new GameObject[1];
     [SerializeField]
     GameObject[] ElementGroop = new GameObject[1];
     [SerializeField]
@@ -56,15 +58,15 @@ public class StepControl : MonoBehaviour
     {
         if (Global.ActivZoom)
         {
-            PanelZoomObject[ZoomObject].SetActive(false);
+            PanelZoomObjectIN[ZoomObject].SetActive(false);
             Global.ActivZoom = false;
-            PanelElement[Global.TempHelpPanel].SetActive(true);
+            PanelZoomObjectOUT[ZoomObject].SetActive(true);
         }
         else
         {
-            PanelZoomObject[ZoomObject].SetActive(true);
+            PanelZoomObjectIN[ZoomObject].SetActive(true);
             Global.ActivZoom = true;
-            PanelElement[Global.TempHelpPanel].SetActive(false);
+            PanelZoomObjectOUT[ZoomObject].SetActive(false);
         }
     }
     public void Next()

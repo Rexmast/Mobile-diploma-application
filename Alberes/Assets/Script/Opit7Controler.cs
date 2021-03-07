@@ -33,8 +33,9 @@ public class Opit7Controler : Controler
         }
         else
         {
+            ActivetObject.SetActive(true);
             GameObject Rezult = (GameObject)Instantiate(AnimationTrue);
-            Rezult.transform.position = transform.position;
+            Rezult.transform.position = transform.TransformVector(0, -8, 0);
             Invoke(nameof(MenuON), TimePerecluch);
         }
         
