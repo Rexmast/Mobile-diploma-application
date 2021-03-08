@@ -705,6 +705,21 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1908240450842479604, guid: a65ec19a150ab1e41a540781d7eeacb6,
         type: 3}
+      propertyPath: PanelZoomObjectIN.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 1908240450842479604, guid: a65ec19a150ab1e41a540781d7eeacb6,
+        type: 3}
+      propertyPath: PanelZoomObjectOUT.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 1908240450842479604, guid: a65ec19a150ab1e41a540781d7eeacb6,
+        type: 3}
+      propertyPath: PanelElement.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 1908240450842479604, guid: a65ec19a150ab1e41a540781d7eeacb6,
+        type: 3}
       propertyPath: ElementGroop.Array.data[1]
       value: 
       objectReference: {fileID: 722633578}
@@ -728,6 +743,36 @@ PrefabInstance:
       propertyPath: PanelHelp.Array.data[2]
       value: 
       objectReference: {fileID: 80454070}
+    - target: {fileID: 1908240450842479604, guid: a65ec19a150ab1e41a540781d7eeacb6,
+        type: 3}
+      propertyPath: PanelZoomObjectIN.Array.data[0]
+      value: 
+      objectReference: {fileID: 694801421}
+    - target: {fileID: 1908240450842479604, guid: a65ec19a150ab1e41a540781d7eeacb6,
+        type: 3}
+      propertyPath: PanelZoomObjectIN.Array.data[1]
+      value: 
+      objectReference: {fileID: 694801421}
+    - target: {fileID: 1908240450842479604, guid: a65ec19a150ab1e41a540781d7eeacb6,
+        type: 3}
+      propertyPath: PanelZoomObjectIN.Array.data[2]
+      value: 
+      objectReference: {fileID: 694801421}
+    - target: {fileID: 1908240450842479604, guid: a65ec19a150ab1e41a540781d7eeacb6,
+        type: 3}
+      propertyPath: PanelZoomObjectOUT.Array.data[0]
+      value: 
+      objectReference: {fileID: 600784197}
+    - target: {fileID: 1908240450842479604, guid: a65ec19a150ab1e41a540781d7eeacb6,
+        type: 3}
+      propertyPath: PanelElement.Array.data[1]
+      value: 
+      objectReference: {fileID: 236140464}
+    - target: {fileID: 1908240450842479604, guid: a65ec19a150ab1e41a540781d7eeacb6,
+        type: 3}
+      propertyPath: PanelElement.Array.data[2]
+      value: 
+      objectReference: {fileID: 1434860851}
     - target: {fileID: 4033772843834654268, guid: a65ec19a150ab1e41a540781d7eeacb6,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -4915,15 +4960,15 @@ RectTransform:
   m_GameObject: {fileID: 600784197}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 10, y: 2.12, z: 1}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1117984608}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 100.00006, y: 200}
-  m_SizeDelta: {x: 122.8, y: 575.9}
+  m_AnchoredPosition: {x: 200, y: 0}
+  m_SizeDelta: {x: 1000, y: 1000}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &600784199
 MonoBehaviour:
@@ -5331,7 +5376,7 @@ RectTransform:
   m_GameObject: {fileID: 694801421}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 5, y: 5, z: 1}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 847346621}
   m_Father: {fileID: 1117984608}
@@ -5339,8 +5384,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 30.000061, y: 140.00015}
-  m_SizeDelta: {x: 100, y: 100}
+  m_AnchoredPosition: {x: 100, y: 1}
+  m_SizeDelta: {x: 500, y: 500}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &694801423
 MonoBehaviour:
