@@ -39,6 +39,7 @@ public class Controler : MonoBehaviour
             if (collision.gameObject.CompareTag("truee") && index == 1)
             {
                 TrueRezultOpit();
+                
             }
             else
             {
@@ -56,7 +57,7 @@ public class Controler : MonoBehaviour
                 this.transform.position = StartPosition;
             }
         }
-
+        
     }
     void Update()
     {

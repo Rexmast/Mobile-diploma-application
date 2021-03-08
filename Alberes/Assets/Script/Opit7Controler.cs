@@ -19,11 +19,13 @@ public class Opit7Controler : Controler
     }
     public override void TrueRezultOpit()
     {
+     
         if (MoreElement)
         {
             ActivetObject.SetActive(true);
             Global.k--;
             GameObject Rezult = (GameObject)Instantiate(AnimationTrue);
+            
             Rezult.transform.position = transform.TransformVector(0, -8, 0);
             this.gameObject.SetActive(false);
             if (Global.k == 0)

@@ -8,7 +8,7 @@ public class StepControl : MonoBehaviour
     GameObject[] PanelHelp = new GameObject[1];
     [SerializeField]
     GameObject[] PanelElement = new GameObject[1];
-    [SerializeField]    
+    [SerializeField]
     GameObject[] PanelZoomObjectIN = new GameObject[1];
     [SerializeField]
     GameObject[] PanelZoomObjectOUT = new GameObject[1];
@@ -26,33 +26,35 @@ public class StepControl : MonoBehaviour
 
     public void ClikHelp()
     {
-        if (Global.ActivHelp)
-        {
-            PanelHelp[Global.TempHelpPanel].SetActive(false);
-            Global.ActivHelp = false;
-            PanelElement[Global.TempHelpPanel].SetActive(true);
-        }
-        else
-        {
-            PanelHelp[Global.TempHelpPanel].SetActive(true);
-            Global.ActivHelp = true;
-            PanelElement[Global.TempHelpPanel].SetActive(false);
-        }
+        if (!Global.ActivRezult)
+            if (Global.ActivHelp)
+            {
+                PanelHelp[Global.TempHelpPanel].SetActive(false);
+                Global.ActivHelp = false;
+                PanelElement[Global.TempHelpPanel].SetActive(true);
+            }
+            else
+            {
+                PanelHelp[Global.TempHelpPanel].SetActive(true);
+                Global.ActivHelp = true;
+                PanelElement[Global.TempHelpPanel].SetActive(false);
+            }
     }
     public void ClikRezult()
     {
-        if (Global.ActivRezult)
-        {
-            PanelRezult.SetActive(false);
-            Global.ActivRezult = false;
-            PanelElement[Global.TempHelpPanel].SetActive(true);
-        }
-        else
-        {
-            PanelRezult.SetActive(true);
-            Global.ActivRezult = true;
-            PanelElement[Global.TempHelpPanel].SetActive(false);
-        }
+        if (!Global.ActivHelp)
+            if (Global.ActivRezult)
+            {
+                PanelRezult.SetActive(false);
+                Global.ActivRezult = false;
+                PanelElement[Global.TempHelpPanel].SetActive(true);
+            }
+            else
+            {
+                PanelRezult.SetActive(true);
+                Global.ActivRezult = true;
+                PanelElement[Global.TempHelpPanel].SetActive(false);
+            }
     }
     public void Clikzoom(int ZoomObject)
     {
@@ -71,13 +73,14 @@ public class StepControl : MonoBehaviour
     }
     public void Next()
     {
-         for (int i = 0; i < ObjectOFF.Length; i++)
-         {
-                ObjectOFF[i].SetActive(false);
+        for (int i = 0; i < ObjectOFF.Length; i++)
+        {
+            ObjectOFF[i].SetActive(false);
         }
         ElementGroop[Global.TempHelpPanel].SetActive(false);
         Global.TempHelpPanel++;
-        if (Global.TempHelpPanel == PanelElement.Length) {
+        if (Global.TempHelpPanel == PanelElement.Length)
+        {
             EndBatton.SetActive(true);
         }
         ElementGroop[Global.TempHelpPanel].SetActive(true);
