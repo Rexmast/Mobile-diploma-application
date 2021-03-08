@@ -19,9 +19,11 @@ public class StepControl : MonoBehaviour
     [SerializeField]
     GameObject[] ObjectOFF = new GameObject[1];
     [SerializeField]
-    GameObject PanelRezult;
+    GameObject[] PanelRezult = new GameObject[1];
     [SerializeField]
     GameObject EndBatton;
+    [SerializeField]
+    GameObject NextBatton;
 
 
     public void ClikHelp()
@@ -45,13 +47,13 @@ public class StepControl : MonoBehaviour
         if (!Global.ActivHelp)
             if (Global.ActivRezult)
             {
-                PanelRezult.SetActive(false);
+                PanelRezult[Global.TempHelpPanel].SetActive(false);
                 Global.ActivRezult = false;
                 PanelElement[Global.TempHelpPanel].SetActive(true);
             }
             else
             {
-                PanelRezult.SetActive(true);
+                PanelRezult[Global.TempHelpPanel].SetActive(true);
                 Global.ActivRezult = true;
                 PanelElement[Global.TempHelpPanel].SetActive(false);
             }
@@ -71,7 +73,7 @@ public class StepControl : MonoBehaviour
             PanelZoomObjectOUT[ZoomObject].SetActive(false);
         }
     }
-    public void Next()
+    public void Next(bool OFF)
     {
         for (int i = 0; i < ObjectOFF.Length; i++)
         {
@@ -88,6 +90,6 @@ public class StepControl : MonoBehaviour
         {
             ObjectON[i].SetActive(true);
         }
-
+        if (OFF) { NextBatton.SetActive(false); }
     }
 }
