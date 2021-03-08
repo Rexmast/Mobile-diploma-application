@@ -26,13 +26,15 @@ public  class BalControl : MonoBehaviour
      void NextStep() 
      {
         Step[Global.StepNumber].SetActive(false);
-        if(Global.StepNumber < Step.Length) {
-            Global.StepNumber++;
+        Global.StepNumber++;
+        if (Global.StepNumber < Step.Length) {
+            
             Step[Global.StepNumber].SetActive(true);
         }
         else
         {
             //финал
+            Debug.Log("Завершено с результатом " + Global.Bal);
         }
 
         

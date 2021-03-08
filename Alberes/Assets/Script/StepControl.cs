@@ -81,11 +81,12 @@ public class StepControl : MonoBehaviour
         }
         ElementGroop[Global.TempHelpPanel].SetActive(false);
         Global.TempHelpPanel++;
-        if (Global.TempHelpPanel == PanelElement.Length)
+        ElementGroop[Global.TempHelpPanel].SetActive(true);
+        if (Global.TempHelpPanel == ElementGroop.Length - 1)
         {
             EndBatton.SetActive(true);
+            Global.TempHelpPanel = 0;
         }
-        ElementGroop[Global.TempHelpPanel].SetActive(true);
         for (int i = 0; i < ObjectON.Length; i++)
         {
             ObjectON[i].SetActive(true);
