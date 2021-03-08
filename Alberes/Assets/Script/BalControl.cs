@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public  class BalControl : MonoBehaviour
 {
@@ -8,6 +9,8 @@ public  class BalControl : MonoBehaviour
     public double[] BalOneStep = new double[1];
     public double BalMinusOneError = -0.75;
     double LocalBal = 0;
+    public GameObject fin;
+    public Text fintext;
     
     void RashetBal()
     {
@@ -33,7 +36,8 @@ public  class BalControl : MonoBehaviour
         }
         else
         {
-            //финал
+            fin.SetActive(true);
+            fintext.text += Global.Bal.ToString();
             Debug.Log("Завершено с результатом " + Global.Bal);
         }
 
