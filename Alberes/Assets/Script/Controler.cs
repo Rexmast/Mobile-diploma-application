@@ -33,10 +33,14 @@ public class Controler : MonoBehaviour
     {
         
     }
+
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (MouseDown)
-            if (collision.gameObject.CompareTag("truee") && index == 1)
+        Debug.Log(this.transform.position.x);
+        Debug.Log(this.transform.position.y);
+        if (this.transform.position.x > -1 && this.transform.position.x < 1 && this.transform.position.y > -3 && this.transform.position.y < -1)
+        if (MouseDown )
+            if ( collision.gameObject.CompareTag("truee") && index == 1 )
             {
                 TrueRezultOpit();
                 
@@ -57,7 +61,7 @@ public class Controler : MonoBehaviour
                 this.transform.position = StartPosition;
             }
         }
-        
+
     }
     void Update()
     {
