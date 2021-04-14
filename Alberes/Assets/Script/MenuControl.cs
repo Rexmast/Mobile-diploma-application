@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class MenuControl : MonoBehaviour
 {
@@ -32,10 +33,10 @@ public class MenuControl : MonoBehaviour
     }
     public void LoadOpit8()
     {
-        Application.LoadLevel("opit 8");
+        SceneManager.LoadScene("opit 8");
     }
     public void LoadOpit7()
     {
-        Application.LoadLevel("opit 7");
+        SceneManager.LoadScene("opit 7");
     }
 }
