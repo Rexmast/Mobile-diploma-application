@@ -664,8 +664,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2443647731936843651}
-  - component: {fileID: 2042275451477137528}
-  - component: {fileID: 1146742590760167166}
   m_Layer: 5
   m_Name: PanelElement
   m_TagString: Untagged
@@ -692,41 +690,6 @@ RectTransform:
   m_AnchoredPosition: {x: -438.00244, y: -298.95972}
   m_SizeDelta: {x: 1280, y: 720}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!222 &2042275451477137528
-CanvasRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4756515271204362022}
-  m_CullTransparentMesh: 0
---- !u!114 &1146742590760167166
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4756515271204362022}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: -765806418, guid: f70555f144d8491a825f0804e09c671c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 0.392}
-  m_RaycastTarget: 1
-  m_OnCullStateChanged:
-    m_PersistentCalls:
-      m_Calls: []
-  m_Sprite: {fileID: 10917, guid: 0000000000000000f000000000000000, type: 0}
-  m_Type: 1
-  m_PreserveAspect: 0
-  m_FillCenter: 1
-  m_FillMethod: 4
-  m_FillAmount: 1
-  m_FillClockwise: 1
-  m_FillOrigin: 0
-  m_UseSpriteMesh: 0
 --- !u!1 &4907184245090595786
 GameObject:
   m_ObjectHideFlags: 0
@@ -892,9 +855,9 @@ MonoBehaviour:
   - {fileID: 2526680098391115371}
   PanelElement:
   - {fileID: 4756515271204362022}
-  PanelZoomObject:
+  PanelZoomObjectIN:
   - {fileID: 0}
-  - {fileID: 0}
+  PanelZoomObjectOUT:
   - {fileID: 0}
   ElementGroop:
   - {fileID: 6446991848676561279}
@@ -904,8 +867,10 @@ MonoBehaviour:
   ObjectOFF:
   - {fileID: 7036468207422699820}
   - {fileID: 7036468207422699820}
-  PanelRezult: {fileID: 1853288463519124462}
+  PanelRezult:
+  - {fileID: 0}
   EndBatton: {fileID: 8175131469114986096}
+  NextBatton: {fileID: 0}
 --- !u!1 &6425019620974863283
 GameObject:
   m_ObjectHideFlags: 0

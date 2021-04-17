@@ -171,7 +171,7 @@ MonoBehaviour:
     type: 3}
   AnimationTrue: {fileID: 9088503074918061152, guid: 382fea1dce7bbe84baf5764672da4424,
     type: 3}
-  ElementMenuOFF: {fileID: 0}
+  ElementMenuOFF: {fileID: 1963826359}
   ElementMenuON: {fileID: 1576499116}
   TimePerecluch: 5
   MoreElement: 0
@@ -675,7 +675,7 @@ MonoBehaviour:
     type: 3}
   AnimationTrue: {fileID: 9088503074918061152, guid: 382fea1dce7bbe84baf5764672da4424,
     type: 3}
-  ElementMenuOFF: {fileID: 0}
+  ElementMenuOFF: {fileID: 1963826359}
   ElementMenuON: {fileID: 1576499116}
   TimePerecluch: 5
   MoreElement: 0
@@ -1475,7 +1475,7 @@ MonoBehaviour:
     type: 3}
   AnimationTrue: {fileID: 7725429853860716660, guid: b91bb9d7d554cd74ebdadf93558a90bf,
     type: 3}
-  ElementMenuOFF: {fileID: 0}
+  ElementMenuOFF: {fileID: 1963826359}
   ElementMenuON: {fileID: 386425641}
   TimePerecluch: 5
   MoreElement: 0
@@ -1848,7 +1848,7 @@ MonoBehaviour:
     type: 3}
   AnimationTrue: {fileID: 8617279751883549674, guid: 3bc4ee057e4f0c24e9d21e2f4704a773,
     type: 3}
-  ElementMenuOFF: {fileID: 0}
+  ElementMenuOFF: {fileID: 1963826359}
   ElementMenuON: {fileID: 800874102}
   TimePerecluch: 5
   MoreElement: 0
@@ -3165,7 +3165,7 @@ MonoBehaviour:
     type: 3}
   AnimationTrue: {fileID: 9088503074918061152, guid: 382fea1dce7bbe84baf5764672da4424,
     type: 3}
-  ElementMenuOFF: {fileID: 0}
+  ElementMenuOFF: {fileID: 1963826359}
   ElementMenuON: {fileID: 1576499116}
   TimePerecluch: 5
   MoreElement: 0
@@ -3579,7 +3579,7 @@ MonoBehaviour:
     type: 3}
   AnimationTrue: {fileID: 1011941215286509262, guid: 8a8eb2588b262c44fa4ce438d22b29d6,
     type: 3}
-  ElementMenuOFF: {fileID: 0}
+  ElementMenuOFF: {fileID: 1963826359}
   ElementMenuON: {fileID: 864589194}
   TimePerecluch: 5
   MoreElement: 1
@@ -3958,8 +3958,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 281914642}
-  - component: {fileID: 281914644}
-  - component: {fileID: 281914643}
   m_Layer: 5
   m_Name: PanelElement
   m_TagString: Untagged
@@ -3992,41 +3990,6 @@ RectTransform:
   m_AnchoredPosition: {x: -438.00244, y: -298.95972}
   m_SizeDelta: {x: 1280, y: 720}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &281914643
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 281914641}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: -765806418, guid: f70555f144d8491a825f0804e09c671c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 0.392}
-  m_RaycastTarget: 1
-  m_OnCullStateChanged:
-    m_PersistentCalls:
-      m_Calls: []
-  m_Sprite: {fileID: 10917, guid: 0000000000000000f000000000000000, type: 0}
-  m_Type: 1
-  m_PreserveAspect: 0
-  m_FillCenter: 1
-  m_FillMethod: 4
-  m_FillAmount: 1
-  m_FillClockwise: 1
-  m_FillOrigin: 0
-  m_UseSpriteMesh: 0
---- !u!222 &281914644
-CanvasRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 281914641}
-  m_CullTransparentMesh: 0
 --- !u!1 &296662448 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 1853288463519124462, guid: a65ec19a150ab1e41a540781d7eeacb6,
@@ -4487,7 +4450,7 @@ MonoBehaviour:
     type: 3}
   AnimationTrue: {fileID: 9088503074918061152, guid: 382fea1dce7bbe84baf5764672da4424,
     type: 3}
-  ElementMenuOFF: {fileID: 0}
+  ElementMenuOFF: {fileID: 1963826359}
   ElementMenuON: {fileID: 1576499116}
   TimePerecluch: 5
   MoreElement: 0
@@ -6380,7 +6343,7 @@ MonoBehaviour:
     type: 3}
   AnimationTrue: {fileID: 5421684323320164020, guid: bffbc1b00e624c847a021ad2a9692c4b,
     type: 3}
-  ElementMenuOFF: {fileID: 0}
+  ElementMenuOFF: {fileID: 1963826359}
   ElementMenuON: {fileID: 1576499116}
   TimePerecluch: 5
   MoreElement: 0
@@ -6759,7 +6722,7 @@ MonoBehaviour:
     type: 3}
   AnimationTrue: {fileID: 7725429853860716660, guid: b91bb9d7d554cd74ebdadf93558a90bf,
     type: 3}
-  ElementMenuOFF: {fileID: 0}
+  ElementMenuOFF: {fileID: 1963826359}
   ElementMenuON: {fileID: 386425641}
   TimePerecluch: 5
   MoreElement: 0
@@ -7108,7 +7071,7 @@ MonoBehaviour:
     type: 3}
   AnimationTrue: {fileID: 9088503074918061152, guid: 382fea1dce7bbe84baf5764672da4424,
     type: 3}
-  ElementMenuOFF: {fileID: 0}
+  ElementMenuOFF: {fileID: 1963826359}
   ElementMenuON: {fileID: 1576499116}
   TimePerecluch: 5
   MoreElement: 0
@@ -7400,7 +7363,7 @@ MonoBehaviour:
     type: 3}
   AnimationTrue: {fileID: 8617279751883549674, guid: 3bc4ee057e4f0c24e9d21e2f4704a773,
     type: 3}
-  ElementMenuOFF: {fileID: 0}
+  ElementMenuOFF: {fileID: 1963826359}
   ElementMenuON: {fileID: 800874102}
   TimePerecluch: 5
   MoreElement: 0
@@ -8063,7 +8026,7 @@ MonoBehaviour:
     type: 3}
   AnimationTrue: {fileID: 9088503074918061152, guid: 382fea1dce7bbe84baf5764672da4424,
     type: 3}
-  ElementMenuOFF: {fileID: 0}
+  ElementMenuOFF: {fileID: 1963826359}
   ElementMenuON: {fileID: 1576499116}
   TimePerecluch: 5
   MoreElement: 0
@@ -8091,7 +8054,7 @@ MonoBehaviour:
     type: 3}
   AnimationTrue: {fileID: 5421684323320164020, guid: bffbc1b00e624c847a021ad2a9692c4b,
     type: 3}
-  ElementMenuOFF: {fileID: 0}
+  ElementMenuOFF: {fileID: 1963826359}
   ElementMenuON: {fileID: 1576499116}
   TimePerecluch: 5
   MoreElement: 0
@@ -8332,7 +8295,7 @@ MonoBehaviour:
     type: 3}
   AnimationTrue: {fileID: 9088503074918061152, guid: 382fea1dce7bbe84baf5764672da4424,
     type: 3}
-  ElementMenuOFF: {fileID: 0}
+  ElementMenuOFF: {fileID: 1963826359}
   ElementMenuON: {fileID: 1576499116}
   TimePerecluch: 5
   MoreElement: 0
@@ -10160,7 +10123,7 @@ MonoBehaviour:
     type: 3}
   AnimationTrue: {fileID: 9088503074918061152, guid: 382fea1dce7bbe84baf5764672da4424,
     type: 3}
-  ElementMenuOFF: {fileID: 0}
+  ElementMenuOFF: {fileID: 1963826359}
   ElementMenuON: {fileID: 1576499116}
   TimePerecluch: 5
   MoreElement: 0
@@ -10346,12 +10309,12 @@ MonoBehaviour:
   index: 0
   AnimationFalse: {fileID: 3055066274109937242, guid: d991a3d1cd4afc547b4d88361641564f,
     type: 3}
-  AnimationTrue: {fileID: 0}
-  ElementMenuOFF: {fileID: 0}
-  ElementMenuON: {fileID: 0}
+  AnimationTrue: {fileID: 1963826359}
+  ElementMenuOFF: {fileID: 1963826359}
+  ElementMenuON: {fileID: 1963826359}
   TimePerecluch: 0
   MoreElement: 0
-  ActivetObject: {fileID: 0}
+  ActivetObject: {fileID: 1963826359}
 --- !u!1 &993482433
 GameObject:
   m_ObjectHideFlags: 0
@@ -12464,7 +12427,7 @@ MonoBehaviour:
     type: 3}
   AnimationTrue: {fileID: 7725429853860716660, guid: b91bb9d7d554cd74ebdadf93558a90bf,
     type: 3}
-  ElementMenuOFF: {fileID: 0}
+  ElementMenuOFF: {fileID: 1963826359}
   ElementMenuON: {fileID: 386425641}
   TimePerecluch: 5
   MoreElement: 0
@@ -13005,12 +12968,12 @@ MonoBehaviour:
   index: 0
   AnimationFalse: {fileID: 3055066274109937242, guid: d991a3d1cd4afc547b4d88361641564f,
     type: 3}
-  AnimationTrue: {fileID: 0}
-  ElementMenuOFF: {fileID: 0}
-  ElementMenuON: {fileID: 0}
+  AnimationTrue: {fileID: 1963826359}
+  ElementMenuOFF: {fileID: 1963826359}
+  ElementMenuON: {fileID: 1963826359}
   TimePerecluch: 0
   MoreElement: 0
-  ActivetObject: {fileID: 0}
+  ActivetObject: {fileID: 1963826359}
 --- !u!1 &1217330716
 GameObject:
   m_ObjectHideFlags: 0
@@ -13372,7 +13335,7 @@ MonoBehaviour:
     type: 3}
   AnimationTrue: {fileID: 1207840413367431512, guid: 76f16bf78ffccb84c8e17c0ee732f578,
     type: 3}
-  ElementMenuOFF: {fileID: 0}
+  ElementMenuOFF: {fileID: 1963826359}
   ElementMenuON: {fileID: 864589194}
   TimePerecluch: 5
   MoreElement: 1
@@ -15448,11 +15411,11 @@ MonoBehaviour:
     type: 3}
   AnimationTrue: {fileID: 5462322717624543390, guid: d29f5e3a5c910194b969e98aa8071361,
     type: 3}
-  ElementMenuOFF: {fileID: 0}
-  ElementMenuON: {fileID: 0}
+  ElementMenuOFF: {fileID: 1963826359}
+  ElementMenuON: {fileID: 1963826359}
   TimePerecluch: 5
   MoreElement: 0
-  ActivetObject: {fileID: 0}
+  ActivetObject: {fileID: 1963826359}
 --- !u!1 &1383502878
 GameObject:
   m_ObjectHideFlags: 0
@@ -15785,7 +15748,7 @@ MonoBehaviour:
     type: 3}
   AnimationTrue: {fileID: 8617279751883549674, guid: 3bc4ee057e4f0c24e9d21e2f4704a773,
     type: 3}
-  ElementMenuOFF: {fileID: 0}
+  ElementMenuOFF: {fileID: 1963826359}
   ElementMenuON: {fileID: 800874102}
   TimePerecluch: 5
   MoreElement: 0
@@ -16683,7 +16646,7 @@ MonoBehaviour:
     type: 3}
   AnimationTrue: {fileID: 9088503074918061152, guid: 382fea1dce7bbe84baf5764672da4424,
     type: 3}
-  ElementMenuOFF: {fileID: 0}
+  ElementMenuOFF: {fileID: 1963826359}
   ElementMenuON: {fileID: 1576499116}
   TimePerecluch: 5
   MoreElement: 0
@@ -17563,7 +17526,7 @@ MonoBehaviour:
     type: 3}
   AnimationTrue: {fileID: 8617279751883549674, guid: 3bc4ee057e4f0c24e9d21e2f4704a773,
     type: 3}
-  ElementMenuOFF: {fileID: 0}
+  ElementMenuOFF: {fileID: 1963826359}
   ElementMenuON: {fileID: 800874102}
   TimePerecluch: 5
   MoreElement: 0
@@ -17911,7 +17874,7 @@ MonoBehaviour:
     type: 3}
   AnimationTrue: {fileID: 8617279751883549674, guid: 3bc4ee057e4f0c24e9d21e2f4704a773,
     type: 3}
-  ElementMenuOFF: {fileID: 0}
+  ElementMenuOFF: {fileID: 1963826359}
   ElementMenuON: {fileID: 800874102}
   TimePerecluch: 5
   MoreElement: 0
@@ -18976,7 +18939,7 @@ MonoBehaviour:
     type: 3}
   AnimationTrue: {fileID: 5421684323320164020, guid: bffbc1b00e624c847a021ad2a9692c4b,
     type: 3}
-  ElementMenuOFF: {fileID: 0}
+  ElementMenuOFF: {fileID: 1963826359}
   ElementMenuON: {fileID: 1576499116}
   TimePerecluch: 5
   MoreElement: 0
@@ -21065,7 +21028,7 @@ MonoBehaviour:
     type: 3}
   AnimationTrue: {fileID: 7725429853860716660, guid: b91bb9d7d554cd74ebdadf93558a90bf,
     type: 3}
-  ElementMenuOFF: {fileID: 0}
+  ElementMenuOFF: {fileID: 1963826359}
   ElementMenuON: {fileID: 386425641}
   TimePerecluch: 5
   MoreElement: 0
@@ -22016,7 +21979,7 @@ MonoBehaviour:
     type: 3}
   AnimationTrue: {fileID: 5421684323320164020, guid: bffbc1b00e624c847a021ad2a9692c4b,
     type: 3}
-  ElementMenuOFF: {fileID: 0}
+  ElementMenuOFF: {fileID: 1963826359}
   ElementMenuON: {fileID: 1576499116}
   TimePerecluch: 5
   MoreElement: 0
@@ -23607,7 +23570,7 @@ MonoBehaviour:
     type: 3}
   AnimationTrue: {fileID: 1409875991654721240, guid: 46a4110ec520f014895c7dfdbcbff154,
     type: 3}
-  ElementMenuOFF: {fileID: 0}
+  ElementMenuOFF: {fileID: 1963826359}
   ElementMenuON: {fileID: 864589194}
   TimePerecluch: 5
   MoreElement: 1
@@ -23761,6 +23724,36 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1957099659}
   m_CullTransparentMesh: 0
+--- !u!1 &1963826359
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1963826360}
+  m_Layer: 0
+  m_Name: Null
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1963826360
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1963826359}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0.8826434, y: -0.33976376, z: 0.095703125}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 10
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1970806523
 GameObject:
   m_ObjectHideFlags: 0
@@ -24812,7 +24805,7 @@ MonoBehaviour:
     type: 3}
   AnimationTrue: {fileID: 5421684323320164020, guid: bffbc1b00e624c847a021ad2a9692c4b,
     type: 3}
-  ElementMenuOFF: {fileID: 0}
+  ElementMenuOFF: {fileID: 1963826359}
   ElementMenuON: {fileID: 1576499116}
   TimePerecluch: 5
   MoreElement: 0
@@ -25121,7 +25114,7 @@ MonoBehaviour:
     type: 3}
   AnimationTrue: {fileID: 9088503074918061152, guid: 382fea1dce7bbe84baf5764672da4424,
     type: 3}
-  ElementMenuOFF: {fileID: 0}
+  ElementMenuOFF: {fileID: 1963826359}
   ElementMenuON: {fileID: 1576499116}
   TimePerecluch: 5
   MoreElement: 0
@@ -25310,7 +25303,7 @@ MonoBehaviour:
     type: 3}
   AnimationTrue: {fileID: 7725429853860716660, guid: b91bb9d7d554cd74ebdadf93558a90bf,
     type: 3}
-  ElementMenuOFF: {fileID: 0}
+  ElementMenuOFF: {fileID: 1963826359}
   ElementMenuON: {fileID: 386425641}
   TimePerecluch: 5
   MoreElement: 0
