@@ -10,7 +10,7 @@ public class TableControler : MonoBehaviour
     public double tempbal = 0.04;
     public void Rezult()
     {
-       if(ViborVariant[0].captionText.text.ToString() == "Оранжевый")
+       if(ViborVariant[0].captionText.text.ToString() == "Фиолетовый")
         {
             tempbal += balplus;
         }

@@ -10,6 +10,7 @@ public class Opit7Controler : Controler
     public int TimePerecluch;
     public bool MoreElement = false;
     public GameObject ActivetObject;
+    public Opit7Controler Opit7Controlerr;
     public void MenuON()
     {
         ElementMenuON.SetActive(true);
@@ -36,8 +37,30 @@ public class Opit7Controler : Controler
             Invoke(nameof(MenuON), TimePerecluch);
         }
     }
-    public override void FalseRezultOpit()
+    public override void FalseRezultOpit() 
     {
-        Global.ErrorCounter++;
+        if (MoreElement)
+        {
+            if (base.collis.gameObject.CompareTag("obl"))
+            {
+                Opit7Controlerr = base.collis.gameObject.GetComponent<Opit7Controler>();
+                Opit7Controlerr.TrueRezultOpit();
+            }else
+            {
+                Global.ErrorCounter++;
+                if (index != 1)
+                    Destroy(this.gameObject, 1);
+            }
+            
+
+        }
+        else
+        {
+            Global.ErrorCounter++;
+            if (index != 1)
+                Destroy(this.gameObject, 1);
+        }
     }
-}
+    
+
+    }

@@ -1,11 +1,13 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using System.Threading;
+using System.Threading.Tasks;
 using UnityEngine;
 
 public class Controler : MonoBehaviour
 {
     bool MouseDown = false;
-    
+    protected Collider2D collis;
     public int index;
     protected Vector3 StartPosition;
     [SerializeField]
@@ -24,45 +26,74 @@ public class Controler : MonoBehaviour
     {
         MouseDown = false;
     }
-    public virtual void  TrueRezultOpit()
+    public virtual void TrueRezultOpit()
     {
-        GameObject Rezult = (GameObject)Instantiate(AnimationTrue);
-        Rezult.transform.position = transform.position;
+        //GameObject Rezult = (GameObject)Instantiate(AnimationTrue);
+        //Rezult.transform.position = transform.position;
     }
     public virtual void FalseRezultOpit()
     {
-        
+
     }
+
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        Debug.Log(this.transform.position.x);
-        Debug.Log(this.transform.position.y);
-        if (this.transform.position.x > -1 && this.transform.position.x < 1 && this.transform.position.y > -3 && this.transform.position.y < -1)
-        if (MouseDown )
-            if ( collision.gameObject.CompareTag("truee") && index == 1 )
-            {
-                TrueRezultOpit();
-                
-            }
+        collis = collision;
+        //if (MouseDown)
+        //{
+        //    Debug.Log("актив");
+        //    Debug.Log(this.transform.position.x);
+        //    Debug.Log(this.transform.position.y);
+        //    Debug.Log("Кализия");
+        //    Debug.Log(collision.gameObject.transform.position.x);
+        //    Debug.Log(collision.gameObject.transform.position.y);
+        //}
+        //else
+        //{
+        //    Debug.Log("не актив");
+        //    Debug.Log(this.transform.position.x);
+        //    Debug.Log(this.transform.position.y);
+        //    Debug.Log("Кализия");
+        //    Debug.Log(collision.gameObject.transform.position.x);
+        //    Debug.Log(collision.gameObject.transform.position.y);
+        //}
+
+        if (this.transform.position.x > -1.5 && this.transform.position.x < 1.5 && this.transform.position.y > -4 && this.transform.position.y < -1 && collision.gameObject.transform.position.x > -1.5 && collision.gameObject.transform.position.x < 1.5 && collision.gameObject.transform.position.y > -4 && collision.gameObject.transform.position.y < -1)
+            if (MouseDown)
+                if (collision.gameObject.CompareTag("truee") && index == 1)
+                {
+
+                    TrueRezultOpit();
+                    MouseDown = false;
+                    StartPost();
+                }
+                else
+                {
+                    FalseRezultOpit();
+                    GameObject Boom = (GameObject)Instantiate(AnimationFalse);
+                    Boom.transform.position = transform.position;
+                    MouseDown = false;
+                    StartPost();
+                }
             else
             {
-                FalseRezultOpit();
-                GameObject Boom = (GameObject)Instantiate(AnimationFalse);
-                Boom.transform.position = transform.position;
-                MouseDown = false;
-                this.transform.position = StartPosition;
-                
-            }
-        else
-        {
-            if (!collision.gameObject.CompareTag("truee") || index != 1)
-            {
-                this.transform.position = StartPosition;
-            }
-        }
+                if (!collision.gameObject.CompareTag("truee") || index != 1)
+                {
+                    if (index != 1)
+                        Destroy(this.gameObject, 1);
+                }
 
+                StartPost();
+            }
     }
+
+    private async void StartPost()
+    {
+        await Task.Delay(100);
+        this.transform.position = StartPosition;
+    }
+
     void Update()
     {
         Vector2 cursor = Input.mousePosition;
