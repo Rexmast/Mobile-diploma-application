@@ -8,6 +8,22 @@ public class TableControler : MonoBehaviour
     public Dropdown[] ViborVariant = new Dropdown[6];
     public double balplus=0.16;
     public double tempbal = 0.04;
+    public GameObject Panel;
+    public GameObject Baton;
+
+    public void TryNext(bool tn)
+    {
+        if (tn) 
+        {
+            Panel.SetActive(true);
+            Baton.SetActive(false);
+        } else
+        {
+            Panel.SetActive(false);
+            Baton.SetActive(true);
+        }
+       
+    }
     public void Rezult()
     {
        if(ViborVariant[0].captionText.text.ToString() == "Фиолетовый")
