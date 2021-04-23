@@ -5,24 +5,25 @@ using UnityEngine;
 
 public class Opit8Controler : Controler
 {
-    public GameObject ElementMenuOFF;
-    public GameObject ElementMenuON;
+    public GameObject ElementON;
     public int TimePerecluch;
+    public GameObject ActivetObject;
     public void MenuON()
     {
-        ElementMenuON.SetActive(true);
+        ElementON.SetActive(true);
     }
     public override void TrueRezultOpit()
     {
-        Debug.Log("true");
-        ElementMenuOFF.SetActive(false);
+        ActivetObject.SetActive(true);
         GameObject Rezult = (GameObject)Instantiate(AnimationTrue);
-        Rezult.transform.position = transform.position;
+        Rezult.transform.position = transform.TransformVector(0, -8, 0);
         Invoke(nameof(MenuON), TimePerecluch);
     }
     public override void FalseRezultOpit()
     {
         Global.ErrorCounter++;
+        if (index != 1)
+            Destroy(this.gameObject, 1);
     }
 }
 
