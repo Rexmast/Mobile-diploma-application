@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class StepControl : MonoBehaviour
 {
@@ -24,6 +25,10 @@ public class StepControl : MonoBehaviour
     GameObject EndBatton;
     [SerializeField]
     GameObject NextBatton;
+    [SerializeField]
+    Text Yslovie;
+    [SerializeField]
+    Text Rezultat;
 
 
     public void ClikHelp()
@@ -34,12 +39,15 @@ public class StepControl : MonoBehaviour
                 PanelHelp[Global.TempHelpPanel].SetActive(false);
                 Global.ActivHelp = false;
                 PanelElement[Global.TempHelpPanel].SetActive(true);
+                Yslovie.text = "Условие задания";
+                
             }
             else
             {
                 PanelHelp[Global.TempHelpPanel].SetActive(true);
                 Global.ActivHelp = true;
                 PanelElement[Global.TempHelpPanel].SetActive(false);
+                Yslovie.text = "Закрыть условие задания";
             }
     }
     public void ClikRezult()
@@ -50,12 +58,14 @@ public class StepControl : MonoBehaviour
                 PanelRezult[Global.TempHelpPanel].SetActive(false);
                 Global.ActivRezult = false;
                 PanelElement[Global.TempHelpPanel].SetActive(true);
+                Rezultat.text = "Результаты опыта";
             }
             else
             {
                 PanelRezult[Global.TempHelpPanel].SetActive(true);
                 Global.ActivRezult = true;
                 PanelElement[Global.TempHelpPanel].SetActive(false);
+                Rezultat.text = "Закрыть результаты опыта";
             }
     }
     public void Clikzoom(int ZoomObject)

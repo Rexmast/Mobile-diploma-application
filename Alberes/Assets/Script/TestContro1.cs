@@ -12,6 +12,23 @@ public class TestContro1 : MonoBehaviour
     public GameObject[] OOFElement;
     public GameObject[] ONElement;
     double BalTest;
+    public GameObject Panel;
+    public GameObject Baton;
+
+    public void TryNext(bool tn)
+    {
+        if (tn)
+        {
+            Panel.SetActive(true);
+            Baton.SetActive(false);
+        }
+        else
+        {
+            Panel.SetActive(false);
+            Baton.SetActive(true);
+        }
+
+    }
     public void Proverka()
     {
         for (int i = 0; i < ArreaToggleTrue.Length; i++)

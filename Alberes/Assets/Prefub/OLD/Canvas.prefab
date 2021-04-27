@@ -2275,6 +2275,10 @@ MonoBehaviour:
   - {fileID: 7342037571217796405}
   - {fileID: 7342037570193497172}
   BalPlus: 0.375
+  ArreaToggleFalse: []
+  BalMinus: 0
+  OOFElement: []
+  ONElement: []
 --- !u!1 &7342037570757284095
 GameObject:
   m_ObjectHideFlags: 0
