@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
@@ -37,7 +38,7 @@ public  class BalControl : MonoBehaviour
         else
         {
             fin.SetActive(true);
-            fintext.text += Global.Bal.ToString();
+            fintext.text += Math.Ceiling(Global.Bal).ToString();
             Debug.Log("Завершено с результатом " + Global.Bal);
         }
 
