@@ -38,7 +38,7 @@ public  class BalControl : MonoBehaviour
         else
         {
             fin.SetActive(true);
-            fintext.text += Math.Ceiling(Global.Bal).ToString();
+            fintext.text += Global.Bal.ToString("N1") ;
             Debug.Log("Завершено с результатом " + Global.Bal);
         }
 
