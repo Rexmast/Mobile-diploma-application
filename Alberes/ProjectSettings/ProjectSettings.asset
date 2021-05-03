@@ -14,7 +14,7 @@ PlayerSettings:
   accelerometerFrequency: 60
   companyName: Vitcore
   productName: "\u0425\u0438\u043C\u0438\u044F\u041E\u043F\u044B\u0442\u044B"
-  defaultCursor: {fileID: 2800000, guid: d3e5ccc9a2643164a8805f7dc6e7fa00, type: 3}
+  defaultCursor: {fileID: 0}
   cursorHotspot: {x: 0, y: 0}
   m_SplashScreenBackgroundColor: {r: 0.13725491, g: 0.12156863, b: 0.1254902, a: 1}
   m_ShowUnitySplashScreen: 1
