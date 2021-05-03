@@ -16,19 +16,19 @@ public class StepControl : MonoBehaviour
     [SerializeField]
     GameObject[] ElementGroop = new GameObject[1];
     [SerializeField]
-    GameObject[] ObjectON = new GameObject[1];
-    [SerializeField]
-    GameObject[] ObjectOFF = new GameObject[1];
-    [SerializeField]
     GameObject[] PanelRezult = new GameObject[1];
     [SerializeField]
     GameObject EndBatton;
     [SerializeField]
     GameObject NextBatton;
     [SerializeField]
-    Text Yslovie;
+    GameObject ConditionBatton;
     [SerializeField]
-    Text Rezultat;
+    GameObject ResultBatton;
+    [SerializeField]
+    Text Condition;
+    [SerializeField]
+    Text Result;
 
 
     public void ClikHelp()
@@ -39,7 +39,7 @@ public class StepControl : MonoBehaviour
                 PanelHelp[Global.TempHelpPanel].SetActive(false);
                 Global.ActivHelp = false;
                 PanelElement[Global.TempHelpPanel].SetActive(true);
-                Yslovie.text = "Условие задания";
+                Condition.text = "Условие задания";
                 
             }
             else
@@ -47,7 +47,7 @@ public class StepControl : MonoBehaviour
                 PanelHelp[Global.TempHelpPanel].SetActive(true);
                 Global.ActivHelp = true;
                 PanelElement[Global.TempHelpPanel].SetActive(false);
-                Yslovie.text = "Закрыть условие задания";
+                Condition.text = "Закрыть условие задания";
             }
     }
     public void ClikRezult()
@@ -58,14 +58,14 @@ public class StepControl : MonoBehaviour
                 PanelRezult[Global.TempHelpPanel].SetActive(false);
                 Global.ActivRezult = false;
                 PanelElement[Global.TempHelpPanel].SetActive(true);
-                Rezultat.text = "Результаты опыта";
+                Result.text = "Результаты опыта";
             }
             else
             {
                 PanelRezult[Global.TempHelpPanel].SetActive(true);
                 Global.ActivRezult = true;
                 PanelElement[Global.TempHelpPanel].SetActive(false);
-                Rezultat.text = "Закрыть результаты опыта";
+                Result.text = "Закрыть результаты опыта";
             }
     }
     public void Clikzoom(int ZoomObject)
@@ -85,22 +85,25 @@ public class StepControl : MonoBehaviour
     }
     public void Next(bool OFF)
     {
-        for (int i = 0; i < ObjectOFF.Length; i++)
-        {
-            ObjectOFF[i].SetActive(false);
-        }
         ElementGroop[Global.TempHelpPanel].SetActive(false);
         Global.TempHelpPanel++;
-        ElementGroop[Global.TempHelpPanel].SetActive(true);
+        if (Global.TempHelpPanel == PanelHelp.Length)
+               {
+                    ConditionBatton.SetActive(false);
+                    ResultBatton.SetActive(false);
+            }
+            ElementGroop[Global.TempHelpPanel].SetActive(true);
         if (Global.TempHelpPanel == ElementGroop.Length - 1)
         {
             EndBatton.SetActive(true);
             Global.TempHelpPanel = 0;
         }
-        for (int i = 0; i < ObjectON.Length; i++)
-        {
-            ObjectON[i].SetActive(true);
-        }
         if (OFF) { NextBatton.SetActive(false); }
+
+        
     }
+    //public void OffInterfes(bool OffElementInterfaceVisibility)
+    //{
+    //    
+    //}
 }

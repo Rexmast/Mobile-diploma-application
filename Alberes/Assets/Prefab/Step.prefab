@@ -441,8 +441,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
-  m_Type: 1
+  m_Sprite: {fileID: 21300000, guid: 9204c990f3b1259478488d7ccec5a6f2, type: 3}
+  m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
   m_FillMethod: 4
@@ -492,14 +492,14 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1908240450842479604}
         m_MethodName: Next
-        m_Mode: 1
+        m_Mode: 6
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
-          m_BoolArgument: 0
+          m_BoolArgument: 1
         m_CallState: 2
 --- !u!1 &3872915071236886555
 GameObject:
@@ -777,7 +777,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8804790615438041794}
   m_Layer: 5
-  m_Name: Button
+  m_Name: Buttons
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -861,16 +861,14 @@ MonoBehaviour:
   - {fileID: 0}
   ElementGroop:
   - {fileID: 6446991848676561279}
-  - {fileID: 0}
-  - {fileID: 0}
-  ObjectON: []
-  ObjectOFF:
-  - {fileID: 7036468207422699820}
-  - {fileID: 7036468207422699820}
   PanelRezult:
-  - {fileID: 0}
+  - {fileID: 1853288463519124462}
   EndBatton: {fileID: 8175131469114986096}
-  NextBatton: {fileID: 0}
+  NextBatton: {fileID: 3275587344074523626}
+  ConditionBatton: {fileID: 6425019620974863283}
+  ResultBatton: {fileID: 7036468207422699820}
+  Condition: {fileID: 2490235628878350639}
+  Result: {fileID: 8956760946847328557}
 --- !u!1 &6425019620974863283
 GameObject:
   m_ObjectHideFlags: 0
@@ -884,7 +882,7 @@ GameObject:
   - component: {fileID: 1588807276252793312}
   - component: {fileID: 5020088602662242644}
   m_Layer: 5
-  m_Name: ButtonYslovie
+  m_Name: ButtonCondition
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -936,8 +934,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
-  m_Type: 1
+  m_Sprite: {fileID: 21300000, guid: 9204c990f3b1259478488d7ccec5a6f2, type: 3}
+  m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
   m_FillMethod: 4
@@ -1094,8 +1092,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
-  m_Type: 1
+  m_Sprite: {fileID: 21300000, guid: 3c9aed6d0b9f8414487f827be0cf1027, type: 3}
+  m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
   m_FillMethod: 4
@@ -1302,8 +1300,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
-  m_Type: 1
+  m_Sprite: {fileID: 21300000, guid: 9204c990f3b1259478488d7ccec5a6f2, type: 3}
+  m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
   m_FillMethod: 4
