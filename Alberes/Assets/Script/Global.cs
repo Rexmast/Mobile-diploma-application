@@ -12,4 +12,6 @@ public class Global : MonoBehaviour
     public static bool ActivRezult = false;
     public static uint TempHelpPanel = 0;
     public static bool ActivZoom = true;
+    public static int IDUser;
+    public static string UserPasword;
 }
