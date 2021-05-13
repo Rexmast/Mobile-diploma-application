@@ -167,7 +167,8 @@ public class SQLControlerSesion : MonoBehaviour
             Global.UserPasword = table.Rows[0][1].ToString();
             Global.IDUser = int.Parse(table.Rows[0][0].ToString());
             MenuSing.SetActive(false);
-            Menu.SetActive(true);
+            Menu.SetActive(true); 
+            goto end;
         }
         else { goto NotExist; }
        
