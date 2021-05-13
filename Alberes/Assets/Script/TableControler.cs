@@ -38,7 +38,7 @@ public class TableControler : MonoBehaviour
         {
             tempbal += balplus;
         }
-        if (ViborVariant[3].captionText.text.ToString() == "Розовый")
+        if (ViborVariant[3].captionText.text.ToString() == "Красный")
         {
             tempbal += balplus;
         }
