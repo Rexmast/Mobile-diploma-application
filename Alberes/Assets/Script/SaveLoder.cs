@@ -34,7 +34,8 @@ public class SaveLoder : MonoBehaviour
         }
         else
         {
-            SqlCommand command = new SqlCommand("INSERT INTO [dbo].[Save] ([IDStudent],[IDOpit],[Bal],[Step]) VALUES("+Global.IDUser+","+Opit+","+0+" ,"+0+")", sqlConnection);
+            SqlCommand command = new SqlCommand("INSERT INTO [dbo].[Save] ([IDStudent],[IDOpit],[Bal],[Step]) VALUES('"+Global.IDUser+"','"+Opit+"','"+0+"','"+0+"')", sqlConnection);
+            Debug.Log("INSERT INTO [dbo].[Save] ([IDStudent],[IDOpit],[Bal],[Step]) VALUES('" + Global.IDUser + "','" + Opit + "','" + 0 + "','" + 0 + "')");
             command.ExecuteNonQuery();
             Step[0].SetActive(true);
         }
