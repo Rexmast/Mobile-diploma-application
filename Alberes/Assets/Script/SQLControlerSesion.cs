@@ -6,14 +6,18 @@ using UnityEngine.UI;
 public class SQLControlerSesion : MonoBehaviour
 {
     [SerializeField]
-    public GameObject PanelQuestionDevase;
+     GameObject PanelQuestionDevase;
     [SerializeField]
-    public GameObject MenuSing;
+   GameObject MenuSing;
     [SerializeField]
-    public Dropdown DropdownISPanelQuestionDevase;
+     Dropdown DropdownISPanelQuestionDevase;
     [SerializeField]
-    public Dropdown DropdownStudent;
-    
+     Dropdown DropdownStudent;
+    [SerializeField]
+    GameObject Menu;
+    [SerializeField]
+    GameObject ErrorPanel;
+
     [SerializeField]
     Text TextDropdown;
     [SerializeField]
@@ -28,7 +32,10 @@ public class SQLControlerSesion : MonoBehaviour
     Text TextFieldPasswordSing;
     [SerializeField]
     Text TextDropdownStudent;
+    [SerializeField]
+    Text ErrorText;
     
+
 
 
     SqlConnection sqlConnection = new SqlConnection(@"Data Source=DiplimMDA.mssql.somee.com;Persist Security Info=True;User ID=Rexmast_SQLLogin_1;Password=9oven62qtd");
@@ -86,6 +93,8 @@ public class SQLControlerSesion : MonoBehaviour
             {
                 Global.UserPasword = PlayerPrefs.GetString("UserPasword");
                 Global.IDUser = PlayerPrefs.GetInt("UserProfel");
+                MenuSing.SetActive(false);
+                Menu.SetActive(true);
             }
             else
             {
@@ -122,9 +131,13 @@ public class SQLControlerSesion : MonoBehaviour
         {
             PlayerPrefs.SetInt("UserProfel", int.Parse(table.Rows[0][0].ToString()));
             PlayerPrefs.SetString("UserPasword", table.Rows[0][1].ToString());
+            
+
         }
         Global.UserPasword = table.Rows[0][1].ToString();
         Global.IDUser = int.Parse(table.Rows[0][0].ToString());
+        MenuSing.SetActive(false);
+        Menu.SetActive(true);
 
     }
      public void Sing()
@@ -137,12 +150,19 @@ public class SQLControlerSesion : MonoBehaviour
             
             Global.UserPasword = table.Rows[0][1].ToString();
             Global.IDUser = int.Parse(table.Rows[0][0].ToString());
+            MenuSing.SetActive(false);
+            Menu.SetActive(true);
         }
         else
         {
-            
+            ErrorMeseg("Пароль не совпал пажалуйста ведите другой пароль.");
         
             //error
         }
+    }
+    void ErrorMeseg(string Show)
+    {
+        ErrorPanel.SetActive(true);
+        ErrorText.text = Show;
     }
 }
