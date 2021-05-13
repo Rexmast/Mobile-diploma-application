@@ -27569,6 +27569,7 @@ MonoBehaviour:
   BalMinusOneError: -0.75
   fin: {fileID: 1119264416}
   fintext: {fileID: 1055963655}
+  Opit: 7
 --- !u!4 &2126459813
 Transform:
   m_ObjectHideFlags: 0

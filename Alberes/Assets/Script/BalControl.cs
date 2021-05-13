@@ -3,15 +3,19 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using System.Data;
+using System.Data.SqlClient;
 
 public  class BalControl : MonoBehaviour
 {
+    SqlConnection sqlConnection = new SqlConnection(@"Data Source=DiplimMDA.mssql.somee.com;Persist Security Info=True;User ID=Rexmast_SQLLogin_1;Password=9oven62qtd");
     public GameObject[] Step = new GameObject[1];
     public double[] BalOneStep = new double[1];
     public double BalMinusOneError = -0.75;
     double LocalBal = 0;
     public GameObject fin;
     public Text fintext;
+    public int Opit;
     
     void RashetBal()
     {
@@ -34,6 +38,9 @@ public  class BalControl : MonoBehaviour
         if (Global.StepNumber < Step.Length) {
             
             Step[Global.StepNumber].SetActive(true);
+            SqlCommand command = new SqlCommand("UPDATE[dbo].[Save] SET[IDStudent] = " + Global.IDUser + " ,[IDOpit] =" + Opit + "  ,[Bal] = " + Global.Bal + "  ,[Step] = " + Global.StepNumber + " " +
+                "WHERE (IDStudent = "+Global.IDUser+") AND (IDOpit = "+Opit+")", sqlConnection);
+            command.ExecuteNonQuery();
         }
         else
         {
