@@ -16,7 +16,11 @@ public  class BalControl : MonoBehaviour
     public GameObject fin;
     public Text fintext;
     public int Opit;
-    
+
+    private void Start()
+    {
+        sqlConnection.Open();
+    }
     void RashetBal()
     {
         LocalBal = BalOneStep[Global.StepNumber] +(BalMinusOneError * Global.ErrorCounter);
@@ -27,8 +31,9 @@ public  class BalControl : MonoBehaviour
         Global.ErrorCounter = 0;
     }
     public void  Rezult()
-    { 
-      RashetBal();
+    {
+        
+        RashetBal();
       NextStep();
     }
      void NextStep() 
@@ -38,8 +43,8 @@ public  class BalControl : MonoBehaviour
         if (Global.StepNumber < Step.Length) {
             
             Step[Global.StepNumber].SetActive(true);
-            SqlCommand command = new SqlCommand("UPDATE[dbo].[Save] SET[IDStudent] = '" + Global.IDUser + "' ,[IDOpit] ='" + Opit + "'  ,[Bal] = '" + Global.Bal + "'  ,[Step] = '" + Global.StepNumber + "' " +
-                "WHERE (IDStudent = '"+Global.IDUser+"') AND (IDOpit = '"+Opit+"')", sqlConnection);
+            SqlCommand command = new SqlCommand("UPDATE[dbo].[Save] SET[IDStudent] = " + Global.IDUser + " ,[IDOpit] =" + Opit + "  ,[Bal] = " + Global.Bal.ToString().Replace(',','.') + "  ,[Step] = " + Global.StepNumber + " " +
+                "WHERE (IDStudent = "+Global.IDUser+") AND (IDOpit = "+Opit+")", sqlConnection);
             command.ExecuteNonQuery();
         }
         else
