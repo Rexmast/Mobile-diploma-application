@@ -50,6 +50,7 @@ public class SQLControlerSesion : MonoBehaviour
         catch
         {
             ErrorMeseg("Вы вошли в офлайн режим.");
+            Menu.SetActive(true);
         }
 
     }
