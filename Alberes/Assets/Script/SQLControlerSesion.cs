@@ -41,9 +41,16 @@ public class SQLControlerSesion : MonoBehaviour
     SqlConnection sqlConnection = new SqlConnection(@"Data Source=DiplimMDA.mssql.somee.com;Persist Security Info=True;User ID=Rexmast_SQLLogin_1;Password=9oven62qtd");
     private void Start()
     {
-        sqlConnection.Open();
-        Chec();
-
+        
+       
+        try { 
+            sqlConnection.Open();
+            Chec();
+        }
+        catch
+        {
+            ErrorMeseg("Вы вошли в офлайн режим.");
+        }
 
     }
   
