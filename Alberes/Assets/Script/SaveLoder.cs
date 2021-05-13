@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Data.SqlClient;
 using System.Data;
 using UnityEngine;
-
+using UnityEngine.UI;
 
 public class SaveLoder : MonoBehaviour
 {
@@ -12,6 +12,8 @@ public class SaveLoder : MonoBehaviour
     GameObject[] Step;
     [SerializeField]
     int Opit;
+    [SerializeField]
+    Text FinTest;
     void Start()
     {
         sqlConnection.Open();
@@ -32,11 +34,15 @@ public class SaveLoder : MonoBehaviour
             Global.Bal = float.Parse(table.Rows[0][0].ToString());
             Global.StepNumber = int.Parse(table.Rows[0][1].ToString());
             Step[int.Parse(table.Rows[0][1].ToString())].SetActive(true);
+            if(int.Parse(table.Rows[0][1].ToString())+1>= Step.Length)
+            {
+                FinTest.text += Global.Bal.ToString("N1");
+            }
         }
         else
         {
             SqlCommand command = new SqlCommand("INSERT INTO [dbo].[Save] ([IDStudent],[IDOpit],[Bal],[Step]) " +
-                "VALUES(" + Global.IDUser.ToString() + "," + Opit.ToString() + "," + 0 + "," + 0 + ")", sqlConnection);
+            "VALUES(" + Global.IDUser.ToString() + "," + Opit.ToString() + "," + 0 + "," + 0 + ")", sqlConnection);
             command.ExecuteNonQuery();
             Step[0].SetActive(true);
         }

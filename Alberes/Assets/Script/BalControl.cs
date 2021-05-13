@@ -43,9 +43,7 @@ public  class BalControl : MonoBehaviour
         if (Global.StepNumber < Step.Length) {
             
             Step[Global.StepNumber].SetActive(true);
-            SqlCommand command = new SqlCommand("UPDATE[dbo].[Save] SET[IDStudent] = " + Global.IDUser + " ,[IDOpit] =" + Opit + "  ,[Bal] = " + Global.Bal.ToString().Replace(',','.') + "  ,[Step] = " + Global.StepNumber + " " +
-                "WHERE (IDStudent = "+Global.IDUser+") AND (IDOpit = "+Opit+")", sqlConnection);
-            command.ExecuteNonQuery();
+           
         }
         else
         {
@@ -53,7 +51,10 @@ public  class BalControl : MonoBehaviour
             fintext.text += Global.Bal.ToString("N1") ;
             Debug.Log("Завершено с результатом " + Global.Bal);
         }
+        SqlCommand command = new SqlCommand("UPDATE[dbo].[Save] SET[IDStudent] = " + Global.IDUser + " ,[IDOpit] =" + Opit + "  ,[Bal] = " + Global.Bal.ToString().Replace(',', '.') + "  ,[Step] = " + Global.StepNumber + " " +
+               "WHERE (IDStudent = " + Global.IDUser + ") AND (IDOpit = " + Opit + ")", sqlConnection);
+        command.ExecuteNonQuery();
 
-        
-     }
+
+    }
 }

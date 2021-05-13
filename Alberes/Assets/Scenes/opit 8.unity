@@ -2499,7 +2499,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 167789414}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 07994bfe8b0e4adb97d706de5dea48d5, type: 3}
   m_Name: 
@@ -10080,8 +10080,9 @@ GameObject:
   m_Component:
   - component: {fileID: 1032527513}
   - component: {fileID: 1032527512}
+  - component: {fileID: 1032527514}
   m_Layer: 0
-  m_Name: BalControl
+  m_Name: Control
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -10110,6 +10111,7 @@ MonoBehaviour:
   BalMinusOneError: -0.75
   fin: {fileID: 797794345}
   fintext: {fileID: 1492368000}
+  Opit: 8
 --- !u!4 &1032527513
 Transform:
   m_ObjectHideFlags: 0
@@ -10124,6 +10126,24 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1032527514
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1032527511}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 777185a196ff6de46811c57ea8b0cbef, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Step:
+  - {fileID: 1103457683}
+  - {fileID: 872674005}
+  - {fileID: 1816554644}
+  - {fileID: 797794345}
+  Opit: 8
 --- !u!1 &1048589208
 GameObject:
   m_ObjectHideFlags: 0
@@ -11918,7 +11938,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1199785450}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 07994bfe8b0e4adb97d706de5dea48d5, type: 3}
   m_Name: 
@@ -17358,7 +17378,7 @@ PrefabInstance:
     - target: {fileID: 6155101087375534829, guid: a65ec19a150ab1e41a540781d7eeacb6,
         type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6446991848676561279, guid: a65ec19a150ab1e41a540781d7eeacb6,
         type: 3}

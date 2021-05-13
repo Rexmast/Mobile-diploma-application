@@ -27535,8 +27535,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2126459813}
-  - component: {fileID: 2126459812}
   - component: {fileID: 2126459814}
+  - component: {fileID: 2126459812}
   m_Layer: 0
   m_Name: Control
   m_TagString: Untagged
@@ -27603,6 +27603,7 @@ MonoBehaviour:
   - {fileID: 2069471334}
   - {fileID: 1119264416}
   Opit: 7
+  FinTest: {fileID: 1055963655}
 --- !u!1 &2129149450
 GameObject:
   m_ObjectHideFlags: 0
