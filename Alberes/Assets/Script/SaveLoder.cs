@@ -14,12 +14,17 @@ public class SaveLoder : MonoBehaviour
     int Opit;
     [SerializeField]
     Text FinTest;
+    [SerializeField]
+    int KStart = 3;
+
     void Start()
     {
         sqlConnection.Open();
+        Global.k = KStart;
         if (Global.OnlineMode)
         {
             LoadSave();
+            
         }
         else
         {
