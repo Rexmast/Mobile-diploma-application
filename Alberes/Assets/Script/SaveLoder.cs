@@ -27,7 +27,7 @@ public class SaveLoder : MonoBehaviour
         {
             LoadSave();
             DataTable table = Tabel(new SqlDataAdapter("SELECT        Otchestvo, Famil, Name FROM            dbo.Student WHERE        (IdStudent = " + Global.IDUser + ") AND (Password = N'" + Global.UserPasword + "')", sqlConnection));
-            OnlineTest.text = "Вы вошли как: " + table.Rows[0][2].ToString()+ " "+table.Rows[0][1].ToString()+ " "+table.Rows[0][0].ToString();
+            OnlineTest.text = "Вы вошли как: " + table.Rows[0][2].ToString().Replace(" ","")+ " "+table.Rows[0][1].ToString().Replace(" ", "") + " "+table.Rows[0][0].ToString().Replace(" ", "");
         }
         else
         {
