@@ -17,7 +17,15 @@ public class SaveLoder : MonoBehaviour
     void Start()
     {
         sqlConnection.Open();
-        loadSave();
+        if (Global.OnlineMode)
+        {
+            LoadSave();
+        }
+        else
+        {
+            OflineloadSave();
+        }
+       
     }
     DataTable Tabel(SqlDataAdapter adapter)
     {
@@ -26,7 +34,7 @@ public class SaveLoder : MonoBehaviour
         return table;
 
     }
-    void loadSave()
+    void LoadSave()
     {
         DataTable table = Tabel(new SqlDataAdapter("SELECT        dbo.[Save].Bal, dbo.[Save].Step FROM            dbo.[Save] INNER JOIN   dbo.Student ON dbo.[Save].IDStudent = dbo.Student.IdStudent WHERE        (dbo.[Save].IDOpit = " + Opit + ") AND (dbo.Student.IdStudent = " + Global.IDUser + ") AND (dbo.Student.Password = N'" + Global.UserPasword + "')", sqlConnection));
         if (table.Rows.Count != 0)
@@ -45,6 +53,24 @@ public class SaveLoder : MonoBehaviour
             "VALUES(" + Global.IDUser.ToString() + "," + Opit.ToString() + "," + 0 + "," + 0 + ")", sqlConnection);
             command.ExecuteNonQuery();
             Step[0].SetActive(true);
+        }
+    }
+    void OflineloadSave()
+    {
+        if (PlayerPrefs.HasKey("StepNumber" + Opit))
+        {
+           
+            Global.Bal = PlayerPrefs.GetFloat("BalNumber" + Opit);
+            Global.StepNumber = PlayerPrefs.GetInt("StepNumber" + Opit);
+            Step[PlayerPrefs.GetInt("StepNumber" + Opit)].SetActive(true);
+            if (PlayerPrefs.GetInt("StepNumber" + Opit) + 1 >= Step.Length)
+            {
+                FinTest.text += Global.Bal.ToString("N1");
+            }
+        }
+        else
+        {
+             Step[0].SetActive(true);
         }
     }
 }

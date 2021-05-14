@@ -44,11 +44,14 @@ public class SQLControlerSesion : MonoBehaviour
         try { 
             sqlConnection.Open();
             Chec();
+            Global.OnlineMode = true;
         }
         catch
         {
+
             ErrorMeseg("Вы вошли в офлайн режим.");
             Menu.SetActive(true);
+            Global.OnlineMode = false; 
         }
 
     }
@@ -117,9 +120,7 @@ public class SQLControlerSesion : MonoBehaviour
     }
     public void LoadingStudent()
     {
-
-        //проверка на аутизм значения DropdownISPanelQuestionDevase.captionText.ToString()
-
+        DropdownStudent.options.Clear();
         if (TextDropdown.text == "") { ErrorMeseg("Пожалуйста выберите свою группу."); goto end; }
 
         DataTable table = Tabel(new SqlDataAdapter("SELECT dbo.Student.Name, dbo.Student.Famil, dbo.Student.Otchestvo FROM            dbo.Student INNER JOIN dbo.Gruppa ON dbo.Student.IdGruppa = dbo.Gruppa.IDGruppa WHERE(dbo.Gruppa.NameGruppa = N'" + TextDropdown.text + "')", sqlConnection)); //DF
@@ -130,8 +131,7 @@ public class SQLControlerSesion : MonoBehaviour
     }
    public void Register()
     {
-        //проверка на аутизм значений
-
+      
         if(TextFieldSurName.text=="" || TextFieldLastName.text=="" || TextFieldFazerName.text=="" || TextFieldPassword.text == ""){ }
 
         if (TextFieldSurName.text == "") { ErrorMeseg("Поле для имени является пустым, пожалуйста заполните его."); goto end; }
@@ -163,7 +163,7 @@ public class SQLControlerSesion : MonoBehaviour
         string NoStr, NotExt;
         NoStr = "Пароль не содержит символов, пожалуйста введите корректный пароль.";
         NotExt = "Пароль не совпал пажалуйста ведите другой пароль.";
-        //проверка на аутизм значений +
+     
         string[] TextDropdown1 = TextDropdownStudent.text.Split(' ');
        if (TextDropdownStudent.text == "") { goto NoPas; }
         DataTable table = Tabel(new SqlDataAdapter(" SELECT IdStudent, Password FROM dbo.Student WHERE(Name = N'" + TextDropdown1[0] + "') AND(Famil = N'" + TextDropdown1[1] + "') AND(Otchestvo = N'" + TextDropdown1[2] + "') AND(Password = N'" + TextFieldPasswordSing.text + "')", sqlConnection));
@@ -186,7 +186,7 @@ public class SQLControlerSesion : MonoBehaviour
             ErrorMeseg(NotExt);
             goto end;
 
-        //error
+        
 
         end:;
     }

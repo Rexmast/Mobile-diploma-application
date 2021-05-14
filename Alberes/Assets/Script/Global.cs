@@ -14,4 +14,5 @@ public class Global : MonoBehaviour
     public static bool ActivZoom = true;
     public static int IDUser;
     public static string UserPasword;
+    public static bool OnlineMode = false;
 }

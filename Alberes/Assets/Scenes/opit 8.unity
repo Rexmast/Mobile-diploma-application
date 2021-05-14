@@ -10144,6 +10144,7 @@ MonoBehaviour:
   - {fileID: 1816554644}
   - {fileID: 797794345}
   Opit: 8
+  FinTest: {fileID: 1492368000}
 --- !u!1 &1048589208
 GameObject:
   m_ObjectHideFlags: 0
