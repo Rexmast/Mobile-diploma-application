@@ -1734,12 +1734,10 @@ MonoBehaviour:
     type: 3}
   AnimationTrue: {fileID: 8617279751883549674, guid: 3bc4ee057e4f0c24e9d21e2f4704a773,
     type: 3}
-  ElementMenuOFF: {fileID: 0}
   ElementMenuON: {fileID: 945129501}
   TimePerecluch: 5
   MoreElement: 0
   ActivetObject: {fileID: 2060970816}
-  Opit7Controlerr: {fileID: 0}
 --- !u!1 &190222010
 GameObject:
   m_ObjectHideFlags: 0
@@ -3549,12 +3547,10 @@ MonoBehaviour:
     type: 3}
   AnimationTrue: {fileID: 8617279751883549674, guid: 3bc4ee057e4f0c24e9d21e2f4704a773,
     type: 3}
-  ElementMenuOFF: {fileID: 0}
   ElementMenuON: {fileID: 945129501}
   TimePerecluch: 5
   MoreElement: 0
   ActivetObject: {fileID: 2060970816}
-  Opit7Controlerr: {fileID: 0}
 --- !u!1001 &305872350
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3743,12 +3739,10 @@ MonoBehaviour:
     type: 3}
   AnimationTrue: {fileID: 7725429853860716660, guid: b91bb9d7d554cd74ebdadf93558a90bf,
     type: 3}
-  ElementMenuOFF: {fileID: 0}
   ElementMenuON: {fileID: 476500856}
   TimePerecluch: 5
   MoreElement: 0
   ActivetObject: {fileID: 2098313885}
-  Opit7Controlerr: {fileID: 0}
 --- !u!1 &308810155
 GameObject:
   m_ObjectHideFlags: 0
@@ -4502,12 +4496,10 @@ MonoBehaviour:
   AnimationFalse: {fileID: 3055066274109937242, guid: d991a3d1cd4afc547b4d88361641564f,
     type: 3}
   AnimationTrue: {fileID: 0}
-  ElementMenuOFF: {fileID: 0}
   ElementMenuON: {fileID: 0}
   TimePerecluch: 0
   MoreElement: 0
   ActivetObject: {fileID: 0}
-  Opit7Controlerr: {fileID: 0}
 --- !u!1001 &353442155
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -4680,12 +4672,10 @@ MonoBehaviour:
     type: 3}
   AnimationTrue: {fileID: 5421684323320164020, guid: bffbc1b00e624c847a021ad2a9692c4b,
     type: 3}
-  ElementMenuOFF: {fileID: 0}
   ElementMenuON: {fileID: 2069471338}
   TimePerecluch: 5
   MoreElement: 0
   ActivetObject: {fileID: 574859522}
-  Opit7Controlerr: {fileID: 0}
 --- !u!1 &356489274
 GameObject:
   m_ObjectHideFlags: 0
@@ -4941,12 +4931,10 @@ MonoBehaviour:
     type: 3}
   AnimationTrue: {fileID: 9088503074918061152, guid: 382fea1dce7bbe84baf5764672da4424,
     type: 3}
-  ElementMenuOFF: {fileID: 0}
   ElementMenuON: {fileID: 2069471338}
   TimePerecluch: 5
   MoreElement: 0
   ActivetObject: {fileID: 1975206529}
-  Opit7Controlerr: {fileID: 0}
 --- !u!1 &380880091
 GameObject:
   m_ObjectHideFlags: 0
@@ -6276,12 +6264,10 @@ MonoBehaviour:
     type: 3}
   AnimationTrue: {fileID: 8617279751883549674, guid: 3bc4ee057e4f0c24e9d21e2f4704a773,
     type: 3}
-  ElementMenuOFF: {fileID: 0}
   ElementMenuON: {fileID: 945129501}
   TimePerecluch: 5
   MoreElement: 0
   ActivetObject: {fileID: 2060970816}
-  Opit7Controlerr: {fileID: 0}
 --- !u!1 &524024040
 GameObject:
   m_ObjectHideFlags: 0
@@ -6791,12 +6777,10 @@ MonoBehaviour:
     type: 3}
   AnimationTrue: {fileID: 9088503074918061152, guid: 382fea1dce7bbe84baf5764672da4424,
     type: 3}
-  ElementMenuOFF: {fileID: 0}
   ElementMenuON: {fileID: 2069471338}
   TimePerecluch: 5
   MoreElement: 0
   ActivetObject: {fileID: 1476193750}
-  Opit7Controlerr: {fileID: 0}
 --- !u!1 &560659961
 GameObject:
   m_ObjectHideFlags: 0
@@ -7612,12 +7596,10 @@ MonoBehaviour:
     type: 3}
   AnimationTrue: {fileID: 7725429853860716660, guid: b91bb9d7d554cd74ebdadf93558a90bf,
     type: 3}
-  ElementMenuOFF: {fileID: 0}
   ElementMenuON: {fileID: 476500856}
   TimePerecluch: 5
   MoreElement: 0
   ActivetObject: {fileID: 2098313885}
-  Opit7Controlerr: {fileID: 0}
 --- !u!1 &593487551
 GameObject:
   m_ObjectHideFlags: 0
@@ -7909,12 +7891,10 @@ MonoBehaviour:
     type: 3}
   AnimationTrue: {fileID: 9088503074918061152, guid: 382fea1dce7bbe84baf5764672da4424,
     type: 3}
-  ElementMenuOFF: {fileID: 0}
   ElementMenuON: {fileID: 2069471338}
   TimePerecluch: 5
   MoreElement: 0
   ActivetObject: {fileID: 1975206529}
-  Opit7Controlerr: {fileID: 0}
 --- !u!1 &613568330
 GameObject:
   m_ObjectHideFlags: 0
@@ -8336,12 +8316,10 @@ MonoBehaviour:
     type: 3}
   AnimationTrue: {fileID: 5462322717624543390, guid: d29f5e3a5c910194b969e98aa8071361,
     type: 3}
-  ElementMenuOFF: {fileID: 0}
   ElementMenuON: {fileID: 0}
   TimePerecluch: 5
   MoreElement: 1
   ActivetObject: {fileID: 0}
-  Opit7Controlerr: {fileID: 0}
 --- !u!1 &668087908
 GameObject:
   m_ObjectHideFlags: 0
@@ -8994,12 +8972,10 @@ MonoBehaviour:
     type: 3}
   AnimationTrue: {fileID: 8617279751883549674, guid: 3bc4ee057e4f0c24e9d21e2f4704a773,
     type: 3}
-  ElementMenuOFF: {fileID: 0}
   ElementMenuON: {fileID: 945129501}
   TimePerecluch: 5
   MoreElement: 0
   ActivetObject: {fileID: 2060970816}
-  Opit7Controlerr: {fileID: 0}
 --- !u!1 &689087906
 GameObject:
   m_ObjectHideFlags: 0
@@ -9211,12 +9187,10 @@ MonoBehaviour:
     type: 3}
   AnimationTrue: {fileID: 9088503074918061152, guid: 382fea1dce7bbe84baf5764672da4424,
     type: 3}
-  ElementMenuOFF: {fileID: 0}
   ElementMenuON: {fileID: 2069471338}
   TimePerecluch: 5
   MoreElement: 0
   ActivetObject: {fileID: 1476193750}
-  Opit7Controlerr: {fileID: 0}
 --- !u!1 &711249907
 GameObject:
   m_ObjectHideFlags: 0
@@ -10302,12 +10276,10 @@ MonoBehaviour:
     type: 3}
   AnimationTrue: {fileID: 5421684323320164020, guid: bffbc1b00e624c847a021ad2a9692c4b,
     type: 3}
-  ElementMenuOFF: {fileID: 0}
   ElementMenuON: {fileID: 2069471338}
   TimePerecluch: 5
   MoreElement: 0
   ActivetObject: {fileID: 574859522}
-  Opit7Controlerr: {fileID: 0}
 --- !u!1 &907240479
 GameObject:
   m_ObjectHideFlags: 0
@@ -12534,12 +12506,10 @@ MonoBehaviour:
     type: 3}
   AnimationTrue: {fileID: 9088503074918061152, guid: 382fea1dce7bbe84baf5764672da4424,
     type: 3}
-  ElementMenuOFF: {fileID: 0}
   ElementMenuON: {fileID: 2069471338}
   TimePerecluch: 5
   MoreElement: 0
   ActivetObject: {fileID: 1476193750}
-  Opit7Controlerr: {fileID: 0}
 --- !u!1 &1044779838
 GameObject:
   m_ObjectHideFlags: 0
@@ -13018,12 +12988,10 @@ MonoBehaviour:
     type: 3}
   AnimationTrue: {fileID: 9088503074918061152, guid: 382fea1dce7bbe84baf5764672da4424,
     type: 3}
-  ElementMenuOFF: {fileID: 0}
   ElementMenuON: {fileID: 2069471338}
   TimePerecluch: 5
   MoreElement: 0
   ActivetObject: {fileID: 1476193750}
-  Opit7Controlerr: {fileID: 0}
 --- !u!1 &1095397011
 GameObject:
   m_ObjectHideFlags: 0
@@ -13290,12 +13258,10 @@ MonoBehaviour:
     type: 3}
   AnimationTrue: {fileID: 5421684323320164020, guid: bffbc1b00e624c847a021ad2a9692c4b,
     type: 3}
-  ElementMenuOFF: {fileID: 0}
   ElementMenuON: {fileID: 2069471338}
   TimePerecluch: 5
   MoreElement: 0
   ActivetObject: {fileID: 574859522}
-  Opit7Controlerr: {fileID: 0}
 --- !u!1 &1117381228
 GameObject:
   m_ObjectHideFlags: 0
@@ -14041,12 +14007,10 @@ MonoBehaviour:
     type: 3}
   AnimationTrue: {fileID: 5421684323320164020, guid: bffbc1b00e624c847a021ad2a9692c4b,
     type: 3}
-  ElementMenuOFF: {fileID: 0}
   ElementMenuON: {fileID: 2069471338}
   TimePerecluch: 5
   MoreElement: 0
   ActivetObject: {fileID: 574859522}
-  Opit7Controlerr: {fileID: 0}
 --- !u!1 &1160539087
 GameObject:
   m_ObjectHideFlags: 0
@@ -14871,12 +14835,10 @@ MonoBehaviour:
   AnimationFalse: {fileID: 3055066274109937242, guid: d991a3d1cd4afc547b4d88361641564f,
     type: 3}
   AnimationTrue: {fileID: 0}
-  ElementMenuOFF: {fileID: 0}
   ElementMenuON: {fileID: 0}
   TimePerecluch: 0
   MoreElement: 0
   ActivetObject: {fileID: 0}
-  Opit7Controlerr: {fileID: 0}
 --- !u!1 &1224158087
 GameObject:
   m_ObjectHideFlags: 0
@@ -15552,12 +15514,10 @@ MonoBehaviour:
     type: 3}
   AnimationTrue: {fileID: 9088503074918061152, guid: 382fea1dce7bbe84baf5764672da4424,
     type: 3}
-  ElementMenuOFF: {fileID: 0}
   ElementMenuON: {fileID: 2069471338}
   TimePerecluch: 5
   MoreElement: 0
   ActivetObject: {fileID: 1476193750}
-  Opit7Controlerr: {fileID: 0}
 --- !u!1 &1301062192
 GameObject:
   m_ObjectHideFlags: 0
@@ -15851,12 +15811,10 @@ MonoBehaviour:
     type: 3}
   AnimationTrue: {fileID: 5421684323320164020, guid: bffbc1b00e624c847a021ad2a9692c4b,
     type: 3}
-  ElementMenuOFF: {fileID: 0}
   ElementMenuON: {fileID: 2069471338}
   TimePerecluch: 5
   MoreElement: 0
   ActivetObject: {fileID: 574859522}
-  Opit7Controlerr: {fileID: 0}
 --- !u!1 &1304247142
 GameObject:
   m_ObjectHideFlags: 0
@@ -16340,12 +16298,10 @@ MonoBehaviour:
     type: 3}
   AnimationTrue: {fileID: 8617279751883549674, guid: 3bc4ee057e4f0c24e9d21e2f4704a773,
     type: 3}
-  ElementMenuOFF: {fileID: 0}
   ElementMenuON: {fileID: 945129501}
   TimePerecluch: 5
   MoreElement: 0
   ActivetObject: {fileID: 2060970816}
-  Opit7Controlerr: {fileID: 0}
 --- !u!1 &1344342905
 GameObject:
   m_ObjectHideFlags: 0
@@ -16678,12 +16634,10 @@ MonoBehaviour:
     type: 3}
   AnimationTrue: {fileID: 9088503074918061152, guid: 382fea1dce7bbe84baf5764672da4424,
     type: 3}
-  ElementMenuOFF: {fileID: 0}
   ElementMenuON: {fileID: 2069471338}
   TimePerecluch: 5
   MoreElement: 0
   ActivetObject: {fileID: 1975206529}
-  Opit7Controlerr: {fileID: 0}
 --- !u!1 &1371053296
 GameObject:
   m_ObjectHideFlags: 0
@@ -18402,12 +18356,10 @@ MonoBehaviour:
     type: 3}
   AnimationTrue: {fileID: 7725429853860716660, guid: b91bb9d7d554cd74ebdadf93558a90bf,
     type: 3}
-  ElementMenuOFF: {fileID: 0}
   ElementMenuON: {fileID: 476500856}
   TimePerecluch: 5
   MoreElement: 0
   ActivetObject: {fileID: 2098313885}
-  Opit7Controlerr: {fileID: 0}
 --- !u!1 &1425009366
 GameObject:
   m_ObjectHideFlags: 0
@@ -19716,12 +19668,10 @@ MonoBehaviour:
     type: 3}
   AnimationTrue: {fileID: 1207840413367431512, guid: 76f16bf78ffccb84c8e17c0ee732f578,
     type: 3}
-  ElementMenuOFF: {fileID: 0}
   ElementMenuON: {fileID: 402509875}
   TimePerecluch: 5
   MoreElement: 1
   ActivetObject: {fileID: 380880091}
-  Opit7Controlerr: {fileID: 0}
 --- !u!1 &1549785306
 GameObject:
   m_ObjectHideFlags: 0
@@ -21039,12 +20989,10 @@ MonoBehaviour:
     type: 3}
   AnimationTrue: {fileID: 7725429853860716660, guid: b91bb9d7d554cd74ebdadf93558a90bf,
     type: 3}
-  ElementMenuOFF: {fileID: 0}
   ElementMenuON: {fileID: 476500856}
   TimePerecluch: 5
   MoreElement: 0
   ActivetObject: {fileID: 2098313885}
-  Opit7Controlerr: {fileID: 0}
 --- !u!1 &1631860577
 GameObject:
   m_ObjectHideFlags: 0
@@ -21612,12 +21560,10 @@ MonoBehaviour:
     type: 3}
   AnimationTrue: {fileID: 1011941215286509262, guid: 8a8eb2588b262c44fa4ce438d22b29d6,
     type: 3}
-  ElementMenuOFF: {fileID: 0}
   ElementMenuON: {fileID: 402509875}
   TimePerecluch: 5
   MoreElement: 1
   ActivetObject: {fileID: 2008064043}
-  Opit7Controlerr: {fileID: 0}
 --- !u!1 &1691668940
 GameObject:
   m_ObjectHideFlags: 0
@@ -22312,12 +22258,10 @@ MonoBehaviour:
     type: 3}
   AnimationTrue: {fileID: 9088503074918061152, guid: 382fea1dce7bbe84baf5764672da4424,
     type: 3}
-  ElementMenuOFF: {fileID: 0}
   ElementMenuON: {fileID: 2069471338}
   TimePerecluch: 5
   MoreElement: 0
   ActivetObject: {fileID: 1975206529}
-  Opit7Controlerr: {fileID: 0}
 --- !u!1 &1734389448
 GameObject:
   m_ObjectHideFlags: 0
@@ -24229,12 +24173,10 @@ MonoBehaviour:
     type: 3}
   AnimationTrue: {fileID: 7725429853860716660, guid: b91bb9d7d554cd74ebdadf93558a90bf,
     type: 3}
-  ElementMenuOFF: {fileID: 0}
   ElementMenuON: {fileID: 476500856}
   TimePerecluch: 5
   MoreElement: 0
   ActivetObject: {fileID: 2098313885}
-  Opit7Controlerr: {fileID: 0}
 --- !u!1 &1933083258
 GameObject:
   m_ObjectHideFlags: 0
@@ -25035,12 +24977,10 @@ MonoBehaviour:
     type: 3}
   AnimationTrue: {fileID: 1409875991654721240, guid: 46a4110ec520f014895c7dfdbcbff154,
     type: 3}
-  ElementMenuOFF: {fileID: 0}
   ElementMenuON: {fileID: 402509875}
   TimePerecluch: 5
   MoreElement: 1
   ActivetObject: {fileID: 1488550420}
-  Opit7Controlerr: {fileID: 0}
 --- !u!1 &1997577027
 GameObject:
   m_ObjectHideFlags: 0
@@ -25691,12 +25631,10 @@ MonoBehaviour:
     type: 3}
   AnimationTrue: {fileID: 9088503074918061152, guid: 382fea1dce7bbe84baf5764672da4424,
     type: 3}
-  ElementMenuOFF: {fileID: 0}
   ElementMenuON: {fileID: 2069471338}
   TimePerecluch: 5
   MoreElement: 0
   ActivetObject: {fileID: 1975206529}
-  Opit7Controlerr: {fileID: 0}
 --- !u!1 &2042016156
 GameObject:
   m_ObjectHideFlags: 0
@@ -27617,6 +27555,7 @@ MonoBehaviour:
   - {fileID: 1119264416}
   Opit: 7
   FinTest: {fileID: 1055963655}
+  KStart: 3
 --- !u!1 &2129149450
 GameObject:
   m_ObjectHideFlags: 0
