@@ -5,12 +5,12 @@ using UnityEngine;
 
 public class Opit7Controler : Controler
 {
-    public GameObject ElementMenuOFF;
+    
     public GameObject ElementMenuON;
     public int TimePerecluch;
     public bool MoreElement = false;
     public GameObject ActivetObject;
-    public Opit7Controler Opit7Controlerr;
+     Opit7Controler Opit7Controlerr;
     public void MenuON()
     {
         ElementMenuON.SetActive(true);
