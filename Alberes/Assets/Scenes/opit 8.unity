@@ -3423,6 +3423,16 @@ PrefabInstance:
       propertyPath: m_Pivot.y
       value: 0.5
       objectReference: {fileID: 0}
+    - target: {fileID: 774848635320044662, guid: 7fb1ab074a187204bb573018ae1ef090,
+        type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.53
+      objectReference: {fileID: 0}
+    - target: {fileID: 774848635320044662, guid: 7fb1ab074a187204bb573018ae1ef090,
+        type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.6
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7fb1ab074a187204bb573018ae1ef090, type: 3}
 --- !u!224 &243929091 stripped
@@ -15068,7 +15078,7 @@ PrefabInstance:
         type: 3}
       propertyPath: m_VideoClip
       value: 
-      objectReference: {fileID: 32900000, guid: 8bf5b311b8d50ac4daa8d5ee40ad3684,
+      objectReference: {fileID: 32900000, guid: 438ddca72ac204d4a8e5db9c30201c70,
         type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 960af1a0f413f7b4ea2a8568398a4144, type: 3}
@@ -15731,7 +15741,7 @@ PrefabInstance:
         type: 3}
       propertyPath: m_VideoClip
       value: 
-      objectReference: {fileID: 32900000, guid: 438ddca72ac204d4a8e5db9c30201c70,
+      objectReference: {fileID: 32900000, guid: 8bf5b311b8d50ac4daa8d5ee40ad3684,
         type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 960af1a0f413f7b4ea2a8568398a4144, type: 3}
@@ -17660,7 +17670,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 360, y: 650}
+  m_SizeDelta: {x: 480, y: 650}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1639579344
 MonoBehaviour:
