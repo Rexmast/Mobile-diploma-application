@@ -1,4 +1,5 @@
-﻿using System.Data;
+﻿using System;
+using System.Data;
 using System.Data.SqlClient;
 using UnityEngine;
 using UnityEngine.UI;
@@ -46,9 +47,8 @@ public class SQLControlerSesion : MonoBehaviour
             Chec();
             Global.OnlineMode = true;
         }
-        catch
+        catch(Exception ex)
         {
-
             ErrorMeseg("Вы вошли в офлайн режим.");
             Menu.SetActive(true);
             Global.OnlineMode = false; 
