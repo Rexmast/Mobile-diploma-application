@@ -10,6 +10,7 @@ public class Opit8Controler : Controler
     public GameObject ActivetObject;
     public bool MoreElement = false;
     Opit8Controler Opit8Controlerr;
+    public int XOpzition = 0;
     public void MenuON()
     {
         ElementON.SetActive(true);
@@ -21,7 +22,7 @@ public class Opit8Controler : Controler
             ActivetObject.SetActive(true);
             Global.k--;
             GameObject Rezult = (GameObject)Instantiate(AnimationTrue);
-            Rezult.transform.position = transform.TransformVector(0, -8, 0);
+            Rezult.transform.position = transform.TransformVector(XOpzition, -8, 0);
             this.gameObject.SetActive(false);
             if (Global.k == 0)
             {
@@ -32,7 +33,7 @@ public class Opit8Controler : Controler
         {
             ActivetObject.SetActive(true);
             GameObject Rezult = (GameObject)Instantiate(AnimationTrue);
-            Rezult.transform.position = transform.TransformVector(0, -8, 0);
+            Rezult.transform.position = transform.TransformVector(XOpzition, -8, 0);
             Invoke(nameof(MenuON), TimePerecluch);
         }
     }
