@@ -21,10 +21,12 @@ public class SaveLoder : MonoBehaviour
 
     void Start()
     {
-        sqlConnection.Open();
+        
         Global.k = KStart;
         if (Global.OnlineMode)
         {
+           
+            sqlConnection.Open();
             LoadSave();
             DataTable table = Tabel(new SqlDataAdapter("SELECT        Otchestvo, Famil, Name FROM            dbo.Student WHERE        (IdStudent = " + Global.IDUser + ") AND (Password = N'" + Global.UserPasword + "')", sqlConnection));
             OnlineTest.text = "Вы вошли как: " + table.Rows[0][2].ToString().Replace(" ","")+ " "+table.Rows[0][1].ToString().Replace(" ", "") + " "+table.Rows[0][0].ToString().Replace(" ", "");

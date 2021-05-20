@@ -19,7 +19,11 @@ public  class BalControl : MonoBehaviour
 
     private void Start()
     {
-        sqlConnection.Open();
+        if (Global.OnlineMode)
+        {
+            sqlConnection.Open();
+        }
+        
         
     }
     void RashetBal()

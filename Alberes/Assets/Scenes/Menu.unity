@@ -7798,6 +7798,15 @@ MonoBehaviour:
   buttonsMenu: {fileID: 1908293682}
   buttonsSetings: {fileID: 1677806795}
   buttonsVibor: {fileID: 406066308}
+  Pnl:
+  - {fileID: 1455891112}
+  - {fileID: 1188561223}
+  - {fileID: 219783969}
+  - {fileID: 1591497878}
+  - {fileID: 331859296}
+  - {fileID: 2090422814}
+  - {fileID: 1388740829}
+  - {fileID: 2130639720}
 --- !u!4 &1580699039
 Transform:
   m_ObjectHideFlags: 0

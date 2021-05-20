@@ -47,7 +47,7 @@ public class SQLControlerSesion : MonoBehaviour
             Chec();
             Global.OnlineMode = true;
         }
-        catch(Exception ex)
+        catch
         {
             ErrorMeseg("Вы вошли в офлайн режим.");
             Menu.SetActive(true);
@@ -144,7 +144,7 @@ public class SQLControlerSesion : MonoBehaviour
         DataTable table = Tabel(new SqlDataAdapter(" SELECT        IDGruppa FROM            dbo.Gruppa WHERE(NameGruppa = N'" + TextDropdown.text + "')", sqlConnection));
         SqlCommand command = new SqlCommand("INSERT INTO [dbo].[Student] ([IdGruppa] ,[Name] ,[Famil] ,[Otchestvo] ,[Password]) VALUES('" + table.Rows[0][0].ToString() + "',N'" + TextFieldSurName.text + "',N'"+ TextFieldLastName.text + "',N'"+ TextFieldFazerName.text + "',N'"+ TextFieldPassword.text + "')", sqlConnection);
         command.ExecuteNonQuery();
-        table = Tabel(new SqlDataAdapter(" SELECT IdGruppa, Password FROM dbo.Student WHERE(Name = N'" + TextFieldSurName.text + "') AND(Famil = N'" + TextFieldLastName.text + "') AND(Otchestvo = N'" + TextFieldFazerName.text + "') AND(Password = N'" + TextFieldPassword.text + "')", sqlConnection));
+        table = Tabel(new SqlDataAdapter(" SELECT IdStudent, Password FROM dbo.Student WHERE(Name = N'" + TextFieldSurName.text + "') AND(Famil = N'" + TextFieldLastName.text + "') AND(Otchestvo = N'" + TextFieldFazerName.text + "') AND(Password = N'" + TextFieldPassword.text + "')", sqlConnection));
         if (PlayerPrefs.GetInt("UsingModel") == 0)
         {
             PlayerPrefs.SetInt("UserProfel", int.Parse(table.Rows[0][0].ToString()));
