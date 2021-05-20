@@ -14,4 +14,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/opit 8.unity
     guid: 48f8b26a534af9347b9d59f9f87cbf73
+  - enabled: 0
+    path: Assets/Scenes/TestScen.unity
+    guid: d7148801c08439e42a32da7e4304b5f3
   m_configObjects: {}
