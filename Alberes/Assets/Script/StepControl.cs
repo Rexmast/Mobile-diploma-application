@@ -29,6 +29,8 @@ public class StepControl : MonoBehaviour
     Text Condition;
     [SerializeField]
     Text Result;
+    [SerializeField]
+    GameObject Viseble;
 
 
     public void ClikHelp()
@@ -40,7 +42,7 @@ public class StepControl : MonoBehaviour
                 Global.ActivHelp = false;
                 PanelElement[Global.TempHelpPanel].SetActive(true);
                 Condition.text = "Условие задания";
-                
+                Viseble.SetActive(true);
             }
             else
             {
@@ -48,6 +50,7 @@ public class StepControl : MonoBehaviour
                 Global.ActivHelp = true;
                 PanelElement[Global.TempHelpPanel].SetActive(false);
                 Condition.text = "Закрыть условие задания";
+                Viseble.SetActive(false);
             }
     }
     public void ClikRezult()
@@ -59,6 +62,7 @@ public class StepControl : MonoBehaviour
                 Global.ActivRezult = false;
                 PanelElement[Global.TempHelpPanel].SetActive(true);
                 Result.text = "Результаты опыта";
+                Viseble.SetActive(true);
             }
             else
             {
@@ -66,6 +70,7 @@ public class StepControl : MonoBehaviour
                 Global.ActivRezult = true;
                 PanelElement[Global.TempHelpPanel].SetActive(false);
                 Result.text = "Закрыть результаты опыта";
+                Viseble.SetActive(false);
             }
     }
     public void Clikzoom(int ZoomObject)
