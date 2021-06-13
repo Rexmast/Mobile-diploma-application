@@ -4100,7 +4100,7 @@ MonoBehaviour:
   m_Script: {fileID: 1980459831, guid: f70555f144d8491a825f0804e09c671c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_UiScaleMode: 1
+  m_UiScaleMode: 0
   m_ReferencePixelsPerUnit: 100
   m_ScaleFactor: 1
   m_ReferenceResolution: {x: 1280, y: 720}
@@ -9523,6 +9523,11 @@ PrefabInstance:
       propertyPath: m_MatchWidthOrHeight
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1846574769087502316, guid: a65ec19a150ab1e41a540781d7eeacb6,
+        type: 3}
+      propertyPath: m_UiScaleMode
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1853288463519124462, guid: a65ec19a150ab1e41a540781d7eeacb6,
         type: 3}
       propertyPath: m_IsActive
@@ -10518,6 +10523,11 @@ PrefabInstance:
     - target: {fileID: 1846574769087502316, guid: a65ec19a150ab1e41a540781d7eeacb6,
         type: 3}
       propertyPath: m_MatchWidthOrHeight
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1846574769087502316, guid: a65ec19a150ab1e41a540781d7eeacb6,
+        type: 3}
+      propertyPath: m_UiScaleMode
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1853288463519124462, guid: a65ec19a150ab1e41a540781d7eeacb6,
@@ -16705,7 +16715,8 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "\u041D\u0430\u0431\u0440\u0430\u043D\u044B\u0439 \u0431\u0430\u043B : "
+  m_Text: "\u041D\u0430\u0431\u0440\u0430\u043D\u044B\u0439 \u0431\u0430\u043B\u043B
+    : "
 --- !u!222 &1492368001
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -18745,6 +18756,11 @@ PrefabInstance:
     - target: {fileID: 1846574769087502316, guid: a65ec19a150ab1e41a540781d7eeacb6,
         type: 3}
       propertyPath: m_MatchWidthOrHeight
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1846574769087502316, guid: a65ec19a150ab1e41a540781d7eeacb6,
+        type: 3}
+      propertyPath: m_UiScaleMode
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1853288463519124462, guid: a65ec19a150ab1e41a540781d7eeacb6,

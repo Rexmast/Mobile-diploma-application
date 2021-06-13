@@ -32,7 +32,7 @@ public  class BalControl : MonoBehaviour
         if (LocalBal < 0) { LocalBal = 0; }
         Global.Bal += LocalBal;
         Debug.Log("Ошибок в ходе выполнения " + Global.ErrorCounter);
-        Debug.Log("Набраный бал " + Global.Bal);
+        Debug.Log("Набранный балл " + Global.Bal);
         Global.ErrorCounter = 0;
     }
     public void  Rezult()

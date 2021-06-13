@@ -162,7 +162,7 @@ public class SQLControlerSesion : MonoBehaviour
     {
         string NoStr, NotExt;
         NoStr = "Пароль не содержит символов, пожалуйста введите корректный пароль.";
-        NotExt = "Пароль не совпал пажалуйста ведите другой пароль.";
+        NotExt = "Пароль не совпал пажалуйста введите другой пароль.";
      
         string[] TextDropdown1 = TextDropdownStudent.text.Split(' ');
        if (TextDropdownStudent.text == "") { goto NoPas; }

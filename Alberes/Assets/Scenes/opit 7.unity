@@ -2266,7 +2266,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 131138475}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 07994bfe8b0e4adb97d706de5dea48d5, type: 3}
   m_Name: 
@@ -2393,7 +2393,8 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "\u041D\u0430\u0431\u0440\u0430\u043D\u044B\u0439 \u0431\u0430\u043B : "
+  m_Text: "\u041D\u0430\u0431\u0440\u0430\u043D\u043D\u044B\u0439 \u0431\u0430\u043B\u043B
+    : "
 --- !u!222 &133512205
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -4623,15 +4624,15 @@ MonoBehaviour:
   m_Script: {fileID: 1980459831, guid: f70555f144d8491a825f0804e09c671c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_UiScaleMode: 1
-  m_ReferencePixelsPerUnit: 100
+  m_UiScaleMode: 0
+  m_ReferencePixelsPerUnit: 579.2
   m_ScaleFactor: 1
   m_ReferenceResolution: {x: 1280, y: 720}
   m_ScreenMatchMode: 0
   m_MatchWidthOrHeight: 0
   m_PhysicalUnit: 3
-  m_FallbackScreenDPI: 96
-  m_DefaultSpriteDPI: 96
+  m_FallbackScreenDPI: 17.3
+  m_DefaultSpriteDPI: 207.6
   m_DynamicPixelsPerUnit: 1
 --- !u!223 &360650099
 Canvas:
@@ -9426,15 +9427,15 @@ MonoBehaviour:
   m_Script: {fileID: 1980459831, guid: f70555f144d8491a825f0804e09c671c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_UiScaleMode: 1
-  m_ReferencePixelsPerUnit: 100
+  m_UiScaleMode: 0
+  m_ReferencePixelsPerUnit: 579.2
   m_ScaleFactor: 1
   m_ReferenceResolution: {x: 1280, y: 720}
   m_ScreenMatchMode: 0
   m_MatchWidthOrHeight: 0.5
   m_PhysicalUnit: 3
-  m_FallbackScreenDPI: 96
-  m_DefaultSpriteDPI: 96
+  m_FallbackScreenDPI: 17.3
+  m_DefaultSpriteDPI: 207.6
   m_DynamicPixelsPerUnit: 1
 --- !u!223 &776125362
 Canvas:
@@ -9743,7 +9744,7 @@ PrefabInstance:
     - target: {fileID: 1846574769087502316, guid: a65ec19a150ab1e41a540781d7eeacb6,
         type: 3}
       propertyPath: m_UiScaleMode
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1846574769087502316, guid: a65ec19a150ab1e41a540781d7eeacb6,
         type: 3}
@@ -9759,6 +9760,26 @@ PrefabInstance:
         type: 3}
       propertyPath: m_MatchWidthOrHeight
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1846574769087502316, guid: a65ec19a150ab1e41a540781d7eeacb6,
+        type: 3}
+      propertyPath: m_FallbackScreenDPI
+      value: 17.3
+      objectReference: {fileID: 0}
+    - target: {fileID: 1846574769087502316, guid: a65ec19a150ab1e41a540781d7eeacb6,
+        type: 3}
+      propertyPath: m_DefaultSpriteDPI
+      value: 207.6
+      objectReference: {fileID: 0}
+    - target: {fileID: 1846574769087502316, guid: a65ec19a150ab1e41a540781d7eeacb6,
+        type: 3}
+      propertyPath: m_ReferencePixelsPerUnit
+      value: 579.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1846574769087502316, guid: a65ec19a150ab1e41a540781d7eeacb6,
+        type: 3}
+      propertyPath: m_PhysicalUnit
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 1853288463519124462, guid: a65ec19a150ab1e41a540781d7eeacb6,
         type: 3}
@@ -11037,7 +11058,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 854654911}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 07994bfe8b0e4adb97d706de5dea48d5, type: 3}
   m_Name: 
@@ -11585,7 +11606,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 951384064}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 07994bfe8b0e4adb97d706de5dea48d5, type: 3}
   m_Name: 
@@ -14105,7 +14126,7 @@ PrefabInstance:
     - target: {fileID: 7342037570656817886, guid: 44ff6607ccc18d844ac8dd233b399e5b,
         type: 3}
       propertyPath: m_UiScaleMode
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7342037570656817886, guid: 44ff6607ccc18d844ac8dd233b399e5b,
         type: 3}
@@ -14121,6 +14142,26 @@ PrefabInstance:
         type: 3}
       propertyPath: m_MatchWidthOrHeight
       value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 7342037570656817886, guid: 44ff6607ccc18d844ac8dd233b399e5b,
+        type: 3}
+      propertyPath: m_FallbackScreenDPI
+      value: 17.3
+      objectReference: {fileID: 0}
+    - target: {fileID: 7342037570656817886, guid: 44ff6607ccc18d844ac8dd233b399e5b,
+        type: 3}
+      propertyPath: m_DefaultSpriteDPI
+      value: 207.6
+      objectReference: {fileID: 0}
+    - target: {fileID: 7342037570656817886, guid: 44ff6607ccc18d844ac8dd233b399e5b,
+        type: 3}
+      propertyPath: m_ReferencePixelsPerUnit
+      value: 579.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7342037570656817886, guid: 44ff6607ccc18d844ac8dd233b399e5b,
+        type: 3}
+      propertyPath: m_PhysicalUnit
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 7342037570677014292, guid: 44ff6607ccc18d844ac8dd233b399e5b,
         type: 3}
@@ -15560,7 +15601,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &1234782412
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -17781,7 +17822,7 @@ PrefabInstance:
     - target: {fileID: 1846574769087502316, guid: a65ec19a150ab1e41a540781d7eeacb6,
         type: 3}
       propertyPath: m_UiScaleMode
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1846574769087502316, guid: a65ec19a150ab1e41a540781d7eeacb6,
         type: 3}
@@ -17797,6 +17838,26 @@ PrefabInstance:
         type: 3}
       propertyPath: m_MatchWidthOrHeight
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1846574769087502316, guid: a65ec19a150ab1e41a540781d7eeacb6,
+        type: 3}
+      propertyPath: m_FallbackScreenDPI
+      value: 17.3
+      objectReference: {fileID: 0}
+    - target: {fileID: 1846574769087502316, guid: a65ec19a150ab1e41a540781d7eeacb6,
+        type: 3}
+      propertyPath: m_DefaultSpriteDPI
+      value: 207.6
+      objectReference: {fileID: 0}
+    - target: {fileID: 1846574769087502316, guid: a65ec19a150ab1e41a540781d7eeacb6,
+        type: 3}
+      propertyPath: m_ReferencePixelsPerUnit
+      value: 579.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1846574769087502316, guid: a65ec19a150ab1e41a540781d7eeacb6,
+        type: 3}
+      propertyPath: m_PhysicalUnit
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 1853288463519124462, guid: a65ec19a150ab1e41a540781d7eeacb6,
         type: 3}
@@ -21352,7 +21413,7 @@ PrefabInstance:
     - target: {fileID: 1846574769087502316, guid: a65ec19a150ab1e41a540781d7eeacb6,
         type: 3}
       propertyPath: m_UiScaleMode
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1846574769087502316, guid: a65ec19a150ab1e41a540781d7eeacb6,
         type: 3}
@@ -21368,6 +21429,26 @@ PrefabInstance:
         type: 3}
       propertyPath: m_MatchWidthOrHeight
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1846574769087502316, guid: a65ec19a150ab1e41a540781d7eeacb6,
+        type: 3}
+      propertyPath: m_FallbackScreenDPI
+      value: 17.3
+      objectReference: {fileID: 0}
+    - target: {fileID: 1846574769087502316, guid: a65ec19a150ab1e41a540781d7eeacb6,
+        type: 3}
+      propertyPath: m_DefaultSpriteDPI
+      value: 207.6
+      objectReference: {fileID: 0}
+    - target: {fileID: 1846574769087502316, guid: a65ec19a150ab1e41a540781d7eeacb6,
+        type: 3}
+      propertyPath: m_ReferencePixelsPerUnit
+      value: 579.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1846574769087502316, guid: a65ec19a150ab1e41a540781d7eeacb6,
+        type: 3}
+      propertyPath: m_PhysicalUnit
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 1853288463519124462, guid: a65ec19a150ab1e41a540781d7eeacb6,
         type: 3}
@@ -23260,15 +23341,15 @@ MonoBehaviour:
   m_Script: {fileID: 1980459831, guid: f70555f144d8491a825f0804e09c671c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_UiScaleMode: 1
-  m_ReferencePixelsPerUnit: 100
+  m_UiScaleMode: 0
+  m_ReferencePixelsPerUnit: 579.2
   m_ScaleFactor: 1
   m_ReferenceResolution: {x: 1280, y: 720}
   m_ScreenMatchMode: 0
   m_MatchWidthOrHeight: 0
   m_PhysicalUnit: 3
-  m_FallbackScreenDPI: 96
-  m_DefaultSpriteDPI: 96
+  m_FallbackScreenDPI: 17.3
+  m_DefaultSpriteDPI: 207.6
   m_DynamicPixelsPerUnit: 1
 --- !u!223 &1813479971
 Canvas:
