@@ -10609,7 +10609,7 @@ PrefabInstance:
         type: 3}
       propertyPath: PanelRezult.Array.data[1]
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 241631908}
     - target: {fileID: 1908240450842479604, guid: a65ec19a150ab1e41a540781d7eeacb6,
         type: 3}
       propertyPath: Rezultat
@@ -10639,12 +10639,12 @@ PrefabInstance:
         type: 3}
       propertyPath: PanelZoomObjectIN.Array.data[1]
       value: 
-      objectReference: {fileID: 1475388862}
+      objectReference: {fileID: 389472543}
     - target: {fileID: 1908240450842479604, guid: a65ec19a150ab1e41a540781d7eeacb6,
         type: 3}
       propertyPath: PanelZoomObjectOUT.Array.data[1]
       value: 
-      objectReference: {fileID: 514273436}
+      objectReference: {fileID: 522258404}
     - target: {fileID: 2490235628878350639, guid: a65ec19a150ab1e41a540781d7eeacb6,
         type: 3}
       propertyPath: m_FontData.m_Font
