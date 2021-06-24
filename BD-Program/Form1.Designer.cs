@@ -51,6 +51,7 @@ namespace BD_Program
             this.comboBox2 = new System.Windows.Forms.ComboBox();
             this.button7 = new System.Windows.Forms.Button();
             this.dataGridView3 = new System.Windows.Forms.DataGridView();
+            this.comboBox4 = new System.Windows.Forms.ComboBox();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).BeginInit();
@@ -217,6 +218,7 @@ namespace BD_Program
             // 
             // tabPage2
             // 
+            this.tabPage2.Controls.Add(this.comboBox4);
             this.tabPage2.Controls.Add(this.dataGridView4);
             this.tabPage2.Controls.Add(this.comboBox3);
             this.tabPage2.Controls.Add(this.comboBox2);
@@ -235,9 +237,9 @@ namespace BD_Program
             this.dataGridView4.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dataGridView4.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells;
             this.dataGridView4.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView4.Location = new System.Drawing.Point(565, 262);
+            this.dataGridView4.Location = new System.Drawing.Point(565, 289);
             this.dataGridView4.Name = "dataGridView4";
-            this.dataGridView4.Size = new System.Drawing.Size(419, 206);
+            this.dataGridView4.Size = new System.Drawing.Size(419, 179);
             this.dataGridView4.TabIndex = 9;
             this.dataGridView4.Click += new System.EventHandler(this.dataGridView4_Click);
             // 
@@ -275,6 +277,14 @@ namespace BD_Program
             this.dataGridView3.Name = "dataGridView3";
             this.dataGridView3.Size = new System.Drawing.Size(976, 250);
             this.dataGridView3.TabIndex = 2;
+            // 
+            // comboBox4
+            // 
+            this.comboBox4.FormattingEnabled = true;
+            this.comboBox4.Location = new System.Drawing.Point(565, 262);
+            this.comboBox4.Name = "comboBox4";
+            this.comboBox4.Size = new System.Drawing.Size(181, 21);
+            this.comboBox4.TabIndex = 10;
             // 
             // Form1
             // 
@@ -320,6 +330,7 @@ namespace BD_Program
         private System.Windows.Forms.ComboBox comboBox2;
         private System.Windows.Forms.Button button7;
         private System.Windows.Forms.DataGridView dataGridView4;
+        private System.Windows.Forms.ComboBox comboBox4;
     }
 }
 

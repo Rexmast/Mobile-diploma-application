@@ -87,5 +87,7 @@ namespace BD_Program
             command.ExecuteNonQuery();
             UpdataGruppa();
         }
+
+       
     }
 }
