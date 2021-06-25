@@ -126,7 +126,7 @@ public class SQLControlerSesion : MonoBehaviour
         DataTable table = Tabel(new SqlDataAdapter("SELECT dbo.Student.Name, dbo.Student.Famil, dbo.Student.Otchestvo FROM            dbo.Student INNER JOIN dbo.Gruppa ON dbo.Student.IdGruppa = dbo.Gruppa.IDGruppa WHERE(dbo.Gruppa.NameGruppa = N'" + TextDropdown.text + "')", sqlConnection)); //DF
         for (int i = 0; i < table.Rows.Count; i++)
 
-            DropdownStudent.options.Add(new Dropdown.OptionData(table.Rows[i][0].ToString().Replace(" ","") + " " + table.Rows[i][1].ToString().Replace(" ", "") + " " + table.Rows[i][2].ToString().Replace(" ", ""))) ;
+            DropdownStudent.options.Add(new Dropdown.OptionData(table.Rows[i][1].ToString().Replace(" ","") + " " + table.Rows[i][0].ToString().Replace(" ", "")[1].ToString().ToUpper() + ". " + table.Rows[i][2].ToString().Replace(" ", "")[1].ToString().ToUpper() + ". ")) ;
         end:;
     }
    public void Register()
