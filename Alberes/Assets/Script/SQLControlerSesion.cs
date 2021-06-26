@@ -126,7 +126,7 @@ public class SQLControlerSesion : MonoBehaviour
         DataTable table = Tabel(new SqlDataAdapter("SELECT dbo.Student.Name, dbo.Student.Famil, dbo.Student.Otchestvo FROM            dbo.Student INNER JOIN dbo.Gruppa ON dbo.Student.IdGruppa = dbo.Gruppa.IDGruppa WHERE(dbo.Gruppa.NameGruppa = N'" + TextDropdown.text + "')", sqlConnection)); //DF
         for (int i = 0; i < table.Rows.Count; i++)
 
-            DropdownStudent.options.Add(new Dropdown.OptionData(table.Rows[i][1].ToString().Replace(" ","") + " " + table.Rows[i][0].ToString().Replace(" ", "")[1].ToString().ToUpper() + ". " + table.Rows[i][2].ToString().Replace(" ", "")[1].ToString().ToUpper() + ". ")) ;
+            DropdownStudent.options.Add(new Dropdown.OptionData(table.Rows[i][1].ToString().Replace(" ","") + " " + table.Rows[i][0].ToString().Replace(" ", "")[0].ToString().ToUpper() + ". " + table.Rows[i][2].ToString().Replace(" ", "")[0].ToString().ToUpper() + ". ")) ;
         end:;
     }
    public void Register()
@@ -166,7 +166,7 @@ public class SQLControlerSesion : MonoBehaviour
      
         string[] TextDropdown1 = TextDropdownStudent.text.Split(' ');
        if (TextDropdownStudent.text == "") { goto NoPas; }
-        DataTable table = Tabel(new SqlDataAdapter(" SELECT IdStudent, Password FROM dbo.Student WHERE(Name = N'" + TextDropdown1[0] + "') AND(Famil = N'" + TextDropdown1[1] + "') AND(Otchestvo = N'" + TextDropdown1[2] + "') AND(Password = N'" + TextFieldPasswordSing.text + "')", sqlConnection));
+        DataTable table = Tabel(new SqlDataAdapter(" SELECT IdStudent, Password FROM dbo.Student WHERE(Famil = N'" + TextDropdown1[0] + "') AND (Password = N'" + TextFieldPasswordSing.text + "')", sqlConnection));
         if (table.Rows.Count != 0)
         {
 

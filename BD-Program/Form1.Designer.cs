@@ -52,6 +52,7 @@ namespace BD_Program
             this.button7 = new System.Windows.Forms.Button();
             this.dataGridView3 = new System.Windows.Forms.DataGridView();
             this.comboBox4 = new System.Windows.Forms.ComboBox();
+            this.textBox6 = new System.Windows.Forms.TextBox();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).BeginInit();
@@ -73,6 +74,7 @@ namespace BD_Program
             // 
             // tabPage1
             // 
+            this.tabPage1.Controls.Add(this.textBox6);
             this.tabPage1.Controls.Add(this.button6);
             this.tabPage1.Controls.Add(this.button5);
             this.tabPage1.Controls.Add(this.button4);
@@ -123,6 +125,7 @@ namespace BD_Program
             this.button4.TabIndex = 11;
             this.button4.Text = "Удалить";
             this.button4.UseVisualStyleBackColor = true;
+            this.button4.Click += new System.EventHandler(this.button4_Click);
             // 
             // button3
             // 
@@ -132,6 +135,7 @@ namespace BD_Program
             this.button3.TabIndex = 10;
             this.button3.Text = "Изменить";
             this.button3.UseVisualStyleBackColor = true;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
             // button2
             // 
@@ -146,10 +150,11 @@ namespace BD_Program
             // comboBox1
             // 
             this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(329, 261);
+            this.comboBox1.Location = new System.Drawing.Point(435, 261);
             this.comboBox1.Name = "comboBox1";
             this.comboBox1.Size = new System.Drawing.Size(100, 21);
             this.comboBox1.TabIndex = 8;
+            this.comboBox1.Click += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
             // 
             // textBox5
             // 
@@ -241,6 +246,7 @@ namespace BD_Program
             this.dataGridView4.Name = "dataGridView4";
             this.dataGridView4.Size = new System.Drawing.Size(419, 179);
             this.dataGridView4.TabIndex = 9;
+            this.dataGridView4.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView4_CellContentClick);
             this.dataGridView4.Click += new System.EventHandler(this.dataGridView4_Click);
             // 
             // comboBox3
@@ -285,6 +291,14 @@ namespace BD_Program
             this.comboBox4.Name = "comboBox4";
             this.comboBox4.Size = new System.Drawing.Size(181, 21);
             this.comboBox4.TabIndex = 10;
+            this.comboBox4.Click += new System.EventHandler(this.comboBox4_SelectedIndexChanged);
+            // 
+            // textBox6
+            // 
+            this.textBox6.Location = new System.Drawing.Point(329, 262);
+            this.textBox6.Name = "textBox6";
+            this.textBox6.Size = new System.Drawing.Size(100, 20);
+            this.textBox6.TabIndex = 14;
             // 
             // Form1
             // 
@@ -331,6 +345,7 @@ namespace BD_Program
         private System.Windows.Forms.Button button7;
         private System.Windows.Forms.DataGridView dataGridView4;
         private System.Windows.Forms.ComboBox comboBox4;
+        private System.Windows.Forms.TextBox textBox6;
     }
 }
 
