@@ -66,7 +66,8 @@ namespace BD_Program
         }
         void UpdataSave()
         {
-            dataGridView3.DataSource = Tabel(new SqlDataAdapter("SELECT        dbo.Gruppa.NameGruppa AS Группа, dbo.Student.Famil AS Фамилия, dbo.Student.Name AS Имя, dbo.Student.Otchestvo AS Отчество, dbo.[Save].IDOpit AS [Номер опыта], dbo.[Save].Bal AS [Набраный бал],        dbo.[Save].Step AS [Этап прохождения] FROM            dbo.[Save] INNER JOIN  dbo.Student ON dbo.[Save].IDStudent = dbo.Student.IdStudent INNER JOIN  dbo.Gruppa ON dbo.Student.IdGruppa = dbo.Gruppa.IDGruppa", sqlConnection));
+            if (comboBox4.Text != "")
+                dataGridView3.DataSource = Tabel(new SqlDataAdapter("SELECT        dbo.Gruppa.NameGruppa AS Группа, dbo.Student.Famil AS Фамилия, dbo.Student.Name AS Имя, dbo.Student.Otchestvo AS Отчество, dbo.[Save].IDOpit AS [Номер опыта], dbo.[Save].Bal AS [Набраный бал],        dbo.[Save].Step AS [Этап прохождения] FROM            dbo.[Save] INNER JOIN  dbo.Student ON dbo.[Save].IDStudent = dbo.Student.IdStudent INNER JOIN  dbo.Gruppa ON dbo.Student.IdGruppa = dbo.Gruppa.IDGruppa WHERE     (dbo.Student.IdGruppa = " + Tabel(new SqlDataAdapter("SELECT IDGruppa FROM dbo.Gruppa WHERE(NameGruppa = N'" + comboBox4.Text + "')", sqlConnection)).Rows[0][0].ToString() + ")", sqlConnection));
 
         }
         void UpdataDostup()
@@ -98,6 +99,7 @@ namespace BD_Program
 
             }
             UpdataGruppa();
+            UpdataStudent();
         end:;
         }
 
@@ -133,6 +135,7 @@ namespace BD_Program
                 goto end;
             }
             UpdataGruppa();
+            UpdataStudent();
         end:;
         }
 
@@ -142,6 +145,7 @@ namespace BD_Program
             SqlCommand command = new SqlCommand("UPDATE [dbo].[Gruppa] SET [NameGruppa] =N'" + textBox1.Text + "'  ,[TimePostypleniay] = " + textBox2.Text + " WHERE IDGruppa = " + Tabel(new SqlDataAdapter("SELECT IDGruppa FROM dbo.Gruppa WHERE(TimePostypleniay = " + dataGridView2[1, dataGridView2.CurrentRow.Index].Value.ToString() + ") AND(NameGruppa = N'" + dataGridView2[0, dataGridView2.CurrentRow.Index].Value.ToString() + "')", sqlConnection)).Rows[0][0].ToString() + " ", sqlConnection);
             command.ExecuteNonQuery();
             UpdataGruppa();
+            UpdataStudent();
         end:;
         }
 
@@ -181,11 +185,14 @@ namespace BD_Program
                 comboBox4.Items.Add(table.Rows[i][0].ToString());
             }
             UpdataDostup();
+            UpdataSave();
         }
 
         private void dataGridView4_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
 
         }
+
+        
     }
 }

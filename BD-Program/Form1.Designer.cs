@@ -291,6 +291,7 @@ namespace BD_Program
             this.comboBox4.Name = "comboBox4";
             this.comboBox4.Size = new System.Drawing.Size(181, 21);
             this.comboBox4.TabIndex = 10;
+           
             this.comboBox4.Click += new System.EventHandler(this.comboBox4_SelectedIndexChanged);
             // 
             // textBox6
