@@ -78,8 +78,11 @@ namespace BD_Program
 
         private void dataGridView4_Click(object sender, EventArgs e)
         {
-            // обновлене таблицы разрешени по нажатию мыши
-            //" + Tabel(new SqlDataAdapter("SELECT IDGruppa FROM dbo.Gruppa WHERE(NameGruppa = N'" +  + "')", sqlConnection)).Rows[0][0].ToString() + "
+            Console.WriteLine(dataGridView4[2, dataGridView4.CurrentRow.Index].Value.ToString());
+            Console.WriteLine(Kastl(dataGridView4[2, dataGridView4.CurrentRow.Index].Value.ToString()).ToString());
+            SqlCommand command = new SqlCommand("UPDATE[dbo].[Dostyp] SET[Activ] = " + Kastl(dataGridView4[2, dataGridView4.CurrentRow.Index].Value.ToString()).ToString() + " WHERE(IDGruppa = " + Tabel(new SqlDataAdapter("SELECT IDGruppa FROM dbo.Gruppa WHERE(NameGruppa = N'" + comboBox4.Text + "')", sqlConnection)).Rows[0][0].ToString() + ") AND (IDOpit = " + dataGridView4[1, dataGridView4.CurrentRow.Index].Value.ToString() + ")", sqlConnection);
+            command.ExecuteNonQuery();
+            UpdataDostup();
         }
 
         private void button2_Click(object sender, EventArgs e)
@@ -188,13 +191,7 @@ namespace BD_Program
             UpdataSave();
         }
 
-        private void dataGridView4_CellContentClick(object sender, DataGridViewCellEventArgs e)
-        {
-            SqlCommand command = new SqlCommand("UPDATE[dbo].[Dostyp] SET[Activ] = " + Kastl(dataGridView4[2, dataGridView4.CurrentRow.Index].Value.ToString()) + " WHERE(IDGruppa = " + Tabel(new SqlDataAdapter("SELECT IDGruppa FROM dbo.Gruppa WHERE(NameGruppa = N'" + comboBox4.Text + "')", sqlConnection)).Rows[0][0].ToString() +") AND (IDOpit = " + dataGridView4[1, dataGridView4.CurrentRow.Index].Value.ToString() + ")", sqlConnection);
-            command.ExecuteNonQuery();
-            UpdataDostup();
-
-        }
+       
         int Kastl(string s)
         {
             if (s == "True")
@@ -206,6 +203,12 @@ namespace BD_Program
                 return 0;
             }
         }
-        
+
+        private void button7_Click(object sender, EventArgs e)
+        {
+            SqlCommand command = new SqlCommand("DELETE FROM [dbo].[Save] WHERE IdStudent = " + Tabel(new SqlDataAdapter("SELECT        IdStudent FROM            dbo.Student WHERE        (Name = N'" + dataGridView3[2, dataGridView3.CurrentRow.Index].Value.ToString() + "') AND (Famil = N'" + dataGridView3[1, dataGridView3.CurrentRow.Index].Value.ToString() + "') AND (Otchestvo = N'" + dataGridView3[3, dataGridView3.CurrentRow.Index].Value.ToString() + "') ", sqlConnection)).Rows[0][0].ToString() + " ", sqlConnection);
+            command.ExecuteNonQuery();
+            UpdataSave();
+        }
     }
 }

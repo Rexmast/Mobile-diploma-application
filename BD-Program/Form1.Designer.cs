@@ -256,10 +256,10 @@ namespace BD_Program
             this.dataGridView4.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView4.Location = new System.Drawing.Point(565, 289);
             this.dataGridView4.Name = "dataGridView4";
+            this.dataGridView4.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dataGridView4.Size = new System.Drawing.Size(419, 179);
             this.dataGridView4.TabIndex = 9;
-            this.dataGridView4.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView4_CellContentClick);
-            this.dataGridView4.Click += new System.EventHandler(this.dataGridView4_Click);
+            this.dataGridView4.DoubleClick += new System.EventHandler(this.dataGridView4_Click);
             // 
             // button7
             // 
@@ -269,6 +269,7 @@ namespace BD_Program
             this.button7.TabIndex = 3;
             this.button7.Text = "Обнулить результаты";
             this.button7.UseVisualStyleBackColor = true;
+            this.button7.Click += new System.EventHandler(this.button7_Click);
             // 
             // dataGridView3
             // 
