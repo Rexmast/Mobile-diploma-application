@@ -190,11 +190,22 @@ namespace BD_Program
 
         private void dataGridView4_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
-            SqlCommand command = new SqlCommand("UPDATE[dbo].[Dostyp] SET[Activ] = < Activ, bit,> WHERE < Условия поиска,,>", sqlConnection);
+            SqlCommand command = new SqlCommand("UPDATE[dbo].[Dostyp] SET[Activ] = " + Kastl(dataGridView4[2, dataGridView4.CurrentRow.Index].Value.ToString()) + " WHERE(IDGruppa = " + Tabel(new SqlDataAdapter("SELECT IDGruppa FROM dbo.Gruppa WHERE(NameGruppa = N'" + comboBox4.Text + "')", sqlConnection)).Rows[0][0].ToString() +") AND (IDOpit = " + dataGridView4[1, dataGridView4.CurrentRow.Index].Value.ToString() + ")", sqlConnection);
             command.ExecuteNonQuery();
-            
-        }
+            UpdataDostup();
 
+        }
+        int Kastl(string s)
+        {
+            if (s == "True")
+            {
+                return 1;
+            }
+            else
+            {
+                return 0;
+            }
+        }
         
     }
 }
