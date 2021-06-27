@@ -7334,7 +7334,7 @@ MonoBehaviour:
     type: 3}
   AnimationTrue: {fileID: 1409875991654721240, guid: 46a4110ec520f014895c7dfdbcbff154,
     type: 3}
-  ElementMenuON: {fileID: 0}
+  ElementMenuON: {fileID: 1485557963}
   TimePerecluch: 5
   MoreElement: 1
   ActivetObject: {fileID: 59905263}
@@ -12435,7 +12435,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1087488724}
+      - m_Target: {fileID: 1234782412}
         m_MethodName: ClikRezult
         m_Mode: 1
         m_Arguments:
@@ -13303,7 +13303,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1087488724}
+      - m_Target: {fileID: 1234782412}
         m_MethodName: ClikHelp
         m_Mode: 1
         m_Arguments:
@@ -18483,7 +18483,7 @@ MonoBehaviour:
     type: 3}
   AnimationTrue: {fileID: 1011941215286509262, guid: 8a8eb2588b262c44fa4ce438d22b29d6,
     type: 3}
-  ElementMenuON: {fileID: 0}
+  ElementMenuON: {fileID: 1485557963}
   TimePerecluch: 5
   MoreElement: 1
   ActivetObject: {fileID: 1830701620}
@@ -19205,7 +19205,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1087488724}
+      - m_Target: {fileID: 1234782412}
         m_MethodName: Next
         m_Mode: 6
         m_Arguments:
@@ -19509,8 +19509,7 @@ MonoBehaviour:
   index: 1
   AnimationFalse: {fileID: 2027430479195047979, guid: a1db0a1eb4e3ca54e9c2332aeeb03613,
     type: 3}
-  AnimationTrue: {fileID: 5462322717624543390, guid: d29f5e3a5c910194b969e98aa8071361,
-    type: 3}
+  AnimationTrue: {fileID: 1485557963}
   ElementMenuON: {fileID: 0}
   TimePerecluch: 5
   MoreElement: 1
@@ -26629,7 +26628,7 @@ MonoBehaviour:
     type: 3}
   AnimationTrue: {fileID: 1207840413367431512, guid: 76f16bf78ffccb84c8e17c0ee732f578,
     type: 3}
-  ElementMenuON: {fileID: 0}
+  ElementMenuON: {fileID: 1485557963}
   TimePerecluch: 5
   MoreElement: 1
   ActivetObject: {fileID: 1080035326}

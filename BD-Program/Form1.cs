@@ -190,7 +190,9 @@ namespace BD_Program
 
         private void dataGridView4_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
-
+            SqlCommand command = new SqlCommand("UPDATE[dbo].[Dostyp] SET[Activ] = < Activ, bit,> WHERE < Условия поиска,,>", sqlConnection);
+            command.ExecuteNonQuery();
+            
         }
 
         
